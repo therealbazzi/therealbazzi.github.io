@@ -11,4 +11,4 @@ author_profile: true
 
 {% include base_path %}
 
-* A. Chowdary, **A. Bazzi**\* and M. Chafii, "On Hybrid Radar Fusion for Integrated Sensing and Communication," in IEEE Transactions on Wireless Communications, doi: 10.1109/TWC.2024.3357573. [paper](https://ieeexplore.ieee.org/abstract/document/10417003) [arXiv](https://arxiv.org/abs/2303.05722)
+* A. Chowdary, **A. Bazzi**\* and M. Chafii, "On Hybrid Radar Fusion for Integrated Sensing and Communication," in IEEE Transactions on Wireless Communications, doi: 10.1109/TWC.2024.3357573. [[paper]](https://ieeexplore.ieee.org/abstract/document/10417003) [[arXiv]](https://arxiv.org/abs/2303.05722)

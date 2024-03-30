@@ -18,6 +18,9 @@ author_profile: true
 * A. W. Azim, **A. Bazzi**, R. Bomfin, R. Shubair and M. Chafii, "Layered Chirp Spread Spectrum Modulations for LPWANs," in *IEEE Transactions on Communications*, vol. 72, no. 3, pp. 1671-1687, March 2024, doi: 10.1109/TCOMM.2023.3331019. [[paper]](https://ieeexplore.ieee.org/abstract/document/10312745) [[nyuscholars]](https://nyuscholars.nyu.edu/en/publications/layered-chirp-spread-spectrum-modulations-for-lpwans) [[mohap]](https://nchr.elsevierpure.com/en/publications/layered-chirp-spread-spectrum-modulations-for-lpwans)
 * A. W. Azim, **A. Bazzi**, M. Fatima, R. Shubair and M. Chafii, "Dual-Mode Time Domain Multiplexed Chirp Spread Spectrum," in *IEEE Transactions on Vehicular Technology*, vol. 72, no. 12, pp. 16086-16097, Dec. 2023, doi: 10.1109/TVT.2023.3295270.
 [[paper]](https://ieeexplore.ieee.org/abstract/document/10183362) [[arXiv]](https://arxiv.org/abs/2210.04094) [[nyuscholars]](https://nyuscholars.nyu.edu/en/publications/dual-mode-time-domain-multiplexed-chirp-spread-spectrum) [[mohap]](https://nchr.elsevierpure.com/en/publications/dual-mode-time-domain-multiplexed-chirp-spread-spectrum) 
+* A. W. Azim, **A. Bazzi**, R. Shubair and M. Chafii, "Dual-Mode Chirp Spread Spectrum Modulation," in *IEEE Wireless Communications Letters*, vol. 11, no. 9, pp. 1995-1999, Sept. 2022, doi: 10.1109/LWC.2022.3190564.
+[[paper]](https://ieeexplore.ieee.org/abstract/document/9828505) [[arXiv]](https://arxiv.org/abs/2205.09421) [[nyuscholars]](https://nyuscholars.nyu.edu/en/publications/dual-mode-chirp-spread-spectrum-modulation) [[mohap]](https://nchr.elsevierpure.com/en/publications/dual-mode-chirp-spread-spectrum-modulation) [[ResearchGate]](https://www.researchgate.net/profile/Raed-Shubair-2/publication/361979474_Dual-Mode_Chirp_Spread_Spectrum_Modulation/links/62d66844d62405589275f13d/Dual-Mode-Chirp-Spread-Spectrum-Modulation.pdf)
+
 
 
 

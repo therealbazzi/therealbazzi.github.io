@@ -51,20 +51,18 @@ I was a research intern at Microsoft Research, New York in the reinforcement lea
 
 I have completed my Master's in Statistics at McGill University under the supervision of [Johanna Neslehova](http://www.math.mcgill.ca/neslehova/). My thesis focused on reconstructing graphical models from discrete data with variational inference and multiarmed bandits. It can be found here: [link](https://bmazoure.github.io/files/thesis_Msc_2018.pdf). Before that, I obtained a Bachelor's in Computer Science and Statistics in 2017 from McGill University.
 
-
+-->
 
 # Research interests
 
-* Deep reinforcement and representation learning;
+* Integrated Sensing and Communications
 
-* High-dimensional statistics and optimization;
+* Wireless Communications
 
-* Parametric and non-parametric Bayesian methods, approximate inference;
+* Signal Processing
 
-* Probabilistic graphical models;
+* Optimization and Statistics
 
-* Generative models and density estimation.
--->
 # Work
 * **Research Scientist** (Now)
   *New York University (NYU) Abu Dhabi*

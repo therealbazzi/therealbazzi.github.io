@@ -2,7 +2,7 @@
 title: "6G Integrated Sensing and Communications: One for All and All for One"
 collection: talks
 type: "Conference talk"
-permalink: /talks/2024-03-02-talk-4
+permalink: /talks/nvidia-gtc-24
 venue: "NVIDIA GTC 2024"
 date: 2024-04-21
 location: "Virtual"

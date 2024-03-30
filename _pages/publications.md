@@ -28,4 +28,8 @@ author_profile: true
 
 
 ## Conferences
-* D. Wang, **A. Bazzi**\* and M. Chafii, "RIS-Enabled Integrated Sensing and Communication for 6G Systems," in *IEEE Wireless Communications and Networking Conference (WCNC)*, 2024. [[arXiv]](https://arxiv.org/abs/2401.00444)
+* D. Wang, **A. Bazzi**\* and M. Chafii, "RIS-Enabled Integrated Sensing and Communication for 6G Systems," *IEEE Wireless Communications and Networking Conference (WCNC)*, 2024. [[arXiv]](https://arxiv.org/abs/2401.00444)
+* A. Chowdary, **A. Bazzi**\* and M. Chafii, "Uplink and Downlink Communications Fusion for Enhanced Radar Sensing," 2023 *IEEE 24th International Workshop on Signal Processing Advances in Wireless Communications (SPAWC)*, Shanghai, China, 2023, pp. 446-450, doi: 10.1109/SPAWC53906.2023.10304540. [[paper]](https://ieeexplore.ieee.org/abstract/document/10304540)[[nyuscholars]](https://nyuscholars.nyu.edu/en/publications/uplink-and-downlink-communications-fusion-for-enhanced-radar-sens)[[mohap]](https://nchr.elsevierpure.com/en/publications/uplink-and-downlink-communications-fusion-for-enhanced-radar-sens)
+
+
+

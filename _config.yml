@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Ahmad Bazzi / Research Scientist"
+title                    : "Ahmad Bazzi"
 title_separator          : "-"
 name                     : &name "Ahmad Bazzi"
 description              : &description "Research scientist at New York University (NYU) Abu Dhabi"

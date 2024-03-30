@@ -94,28 +94,26 @@ I have completed my Master's in Statistics at McGill University under the superv
 * Probabilistic graphical models;
 
 * Generative models and density estimation.
-
+-->
 # Work
-* **Student Researcher** (Now)
-  *Google Brain*
-* **Research intern** (Summer 2021)
-  *Google Brain*
-* **Researcher** (2020-2021)
-  *Microsoft Research*
-* **Research intern** (Summer 2020)
-  *Microsoft Research (NYC)*
-* **Research intern** (Summer 2019)
-  *Microsoft Research (Montreal)*
-* **Research intern** (Summer 2018)
-  *Nuance* -->
+* **Research Scientist** (Now)
+  *New York University (NYU) Abu Dhabi*
+* **Research Associate** (2022-2024)
+  *New York University (NYU) Abu Dhabi*
+* **Algorithm and Signal Processing Team Leader** (2021-2022)
+  *CEVA-DSP*
+* **Signal Processing Engineer** (2017-2021)
+  *CEVA-DSP*
+* **Signal Processing Engineer intern** (Summer 2014)
+  *RivieraWaves*
 
 # Education
 
 🎓 **PhD in Electrical Engineering** (2014-2017)
   *EURECOM / Communication Systems*
 
-🎓 **MSc in Electrical Engineering (Wireless Communications)** (2013-2014)
-  *CentraleSupélec*
+🎓 **MSc in Electrical Engineering** (2013-2014)
+  *CentraleSupélec / SAR*
 
 🎓 **BSc in Electrical and Computer Engineering** (2009-2014)
   *Lebanese University, Faculty of Engineering III*

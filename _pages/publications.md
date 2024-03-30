@@ -27,4 +27,5 @@ author_profile: true
 
 
 
-## Conference
+## Conferences
+* D. Wang, **A. Bazzi**\* and M. Chafii, "RIS-Enabled Integrated Sensing and Communication for 6G Systems," in *IEEE Wireless Communications and Networking Conference (WCNC)*, 2024. [[arXiv]](https://arxiv.org/abs/2401.00444)

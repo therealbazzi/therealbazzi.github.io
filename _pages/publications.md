@@ -20,7 +20,8 @@ author_profile: true
 [[paper]](https://ieeexplore.ieee.org/abstract/document/10183362) [[arXiv]](https://arxiv.org/abs/2210.04094) [[nyuscholars]](https://nyuscholars.nyu.edu/en/publications/dual-mode-time-domain-multiplexed-chirp-spread-spectrum) [[mohap]](https://nchr.elsevierpure.com/en/publications/dual-mode-time-domain-multiplexed-chirp-spread-spectrum) 
 * A. W. Azim, **A. Bazzi**, R. Shubair and M. Chafii, "Dual-Mode Chirp Spread Spectrum Modulation," in *IEEE Wireless Communications Letters*, vol. 11, no. 9, pp. 1995-1999, Sept. 2022, doi: 10.1109/LWC.2022.3190564.
 [[paper]](https://ieeexplore.ieee.org/abstract/document/9828505) [[arXiv]](https://arxiv.org/abs/2205.09421) [[nyuscholars]](https://nyuscholars.nyu.edu/en/publications/dual-mode-chirp-spread-spectrum-modulation) [[mohap]](https://nchr.elsevierpure.com/en/publications/dual-mode-chirp-spread-spectrum-modulation) [[ResearchGate]](https://www.researchgate.net/profile/Raed-Shubair-2/publication/361979474_Dual-Mode_Chirp_Spread_Spectrum_Modulation/links/62d66844d62405589275f13d/Dual-Mode-Chirp-Spread-Spectrum-Modulation.pdf)
-
+* W. Njima, **A. Bazzi** and M. Chafii, "DNN-Based Indoor Localization Under Limited Dataset Using GANs and Semi-Supervised Learning," in *IEEE Access*, vol. 10, pp. 69896-69909, 2022, doi: 10.1109/ACCESS.2022.3187837.
+[[paper]](https://ieeexplore.ieee.org/abstract/document/9812625) [[nyuscholars]](https://nyuscholars.nyu.edu/en/publications/dnn-based-indoor-localization-under-limited-dataset-using-gans-an) [[ResearchGate]](https://www.researchgate.net/profile/Wafa-Njima/publication/361693527_DNN-based_Indoor_Localization_Under_Limited_Dataset_using_GANs_and_Semi-Supervised_Learning/links/62c5c36d8f4dd63324adb6a8/DNN-based-Indoor-Localization-Under-Limited-Dataset-using-GANs-and-Semi-Supervised-Learning.pdf)
 
 
 

@@ -35,7 +35,7 @@ author:
   googlescholar    : "https://scholar.google.com/citations?hl=en&user=9HWunwcAAAAJ"
   impactstory      : # URL
   orcid            : "http://orcid.org/yourorcidurl"
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  pubmed           : # URL
   researchgate     : "https://www.researchgate.net/profile/Ahmad-Bazzi"
 
   # Repositories and software development

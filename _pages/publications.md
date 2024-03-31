@@ -28,10 +28,10 @@ author_profile: true
 
 
 ## Conferences
-* D. Wang, **A. Bazzi**\* and M. Chafii, "RIS-Enabled Integrated Sensing and Communication for 6G Systems," *IEEE Wireless Communications and Networking Conference (WCNC)*, 2024. [[arXiv]](https://arxiv.org/abs/2401.00444)
-* S. Naoumi, **A. Bazzi**\*, R. Bomfin and M. Chafii, "Deep Learning-Enabled Angle Estimation in Bistatic ISAC Systems," *2023 IEEE Globecom Workshops (GC Wkshps)*, Kuala Lumpur, Malaysia, 2023, pp. 854-859, doi: 10.1109/GCWkshps58843.2023.10464930.[[paper]](https://ieeexplore.ieee.org/abstract/document/10464930)
-* A. Chowdary, **A. Bazzi**\* and M. Chafii, "Uplink and Downlink Communications Fusion for Enhanced Radar Sensing," 2023 *IEEE 24th International Workshop on Signal Processing Advances in Wireless Communications (SPAWC)*, Shanghai, China, 2023, pp. 446-450, doi: 10.1109/SPAWC53906.2023.10304540. [[paper]](https://ieeexplore.ieee.org/abstract/document/10304540)[[nyuscholars]](https://nyuscholars.nyu.edu/en/publications/uplink-and-downlink-communications-fusion-for-enhanced-radar-sens)[[mohap]](https://nchr.elsevierpure.com/en/publications/uplink-and-downlink-communications-fusion-for-enhanced-radar-sens)
-* 
+* D. Wang, **A. Bazzi** and M. Chafii, "RIS-Enabled Integrated Sensing and Communication for 6G Systems," *IEEE Wireless Communications and Networking Conference (WCNC)*, 2024. [[arXiv]](https://arxiv.org/abs/2401.00444)
+* S. Naoumi, **A. Bazzi**, R. Bomfin and M. Chafii, "Deep Learning-Enabled Angle Estimation in Bistatic ISAC Systems," *2023 IEEE Globecom Workshops (GC Wkshps)*, Kuala Lumpur, Malaysia, 2023, pp. 854-859, doi: 10.1109/GCWkshps58843.2023.10464930.[[paper]](https://ieeexplore.ieee.org/abstract/document/10464930)
+* A. Chowdary, **A. Bazzi** and M. Chafii, "Uplink and Downlink Communications Fusion for Enhanced Radar Sensing," 2023 *IEEE 24th International Workshop on Signal Processing Advances in Wireless Communications (SPAWC)*, Shanghai, China, 2023, pp. 446-450, doi: 10.1109/SPAWC53906.2023.10304540. [[paper]](https://ieeexplore.ieee.org/abstract/document/10304540)[[nyuscholars]](https://nyuscholars.nyu.edu/en/publications/uplink-and-downlink-communications-fusion-for-enhanced-radar-sens)[[mohap]](https://nchr.elsevierpure.com/en/publications/uplink-and-downlink-communications-fusion-for-enhanced-radar-sens)
+* M. Delamou, **A. Bazzi**, M. Chafii and E. M. Amhoud, "Deep Learning-based Estimation for Multitarget Radar Detection," *2023 IEEE 97th Vehicular Technology Conference (VTC2023-Spring)*, Florence, Italy, 2023, pp. 1-5, doi: 10.1109/VTC2023-Spring57618.2023.10200157.[[paper]](https://ieeexplore.ieee.org/abstract/document/10200157)[[arXiv]](https://arxiv.org/abs/2305.05621)[[nyuscholars]](https://nyuscholars.nyu.edu/en/publications/deep-learning-based-estimation-for-multitarget-radar-detection)
 
 
 

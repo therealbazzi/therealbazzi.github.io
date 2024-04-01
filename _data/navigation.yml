@@ -5,7 +5,7 @@ main:
 
   - title: "Patents"
     url: /patents/
-    
+
   - title: "Talks"
     url: /talks/    
 
@@ -14,6 +14,9 @@ main:
 
   - title: "Honors & Awards"
     url: /honors/    
+
+  - title: "Service"
+    url: /service/
     
   - title: "Portfolio"
     url: /portfolio/

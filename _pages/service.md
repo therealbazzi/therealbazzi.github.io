@@ -9,3 +9,4 @@ author_profile: true
 * IEEE Transactions on Wireless Communications
 * IEEE Transactions on Communications
 * IEEE Transactions on Signal Processing
+* IEEE Signal Processing Letters

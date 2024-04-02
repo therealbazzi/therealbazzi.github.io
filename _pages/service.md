@@ -6,5 +6,6 @@ author_profile: true
 ---
 
 ## Reviewer for Journals
-* journal 1
-* journal 2
+* IEEE Transactions on Wireless Communications
+* IEEE Transactions on Communications
+* IEEE Transactions on Signal Processing

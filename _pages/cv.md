@@ -62,5 +62,5 @@ Teaching
 Service
 ======
   <ul>{% for post in site.service reversed %}
-    {% include archive-single-cv.html %}
+    {% include archive-single-service-cv.html %}
   {% endfor %}</ul>

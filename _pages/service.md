@@ -10,3 +10,4 @@ author_profile: true
 * IEEE Transactions on Communications
 * IEEE Transactions on Signal Processing
 * IEEE Signal Processing Letters
+* IEEE Communication Letters

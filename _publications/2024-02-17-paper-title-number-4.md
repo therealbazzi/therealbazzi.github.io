@@ -2,7 +2,7 @@
 title: "Complex Neural Network based Joint AoA and AoD Estimation for Bistatic ISAC"
 collection: publications
 permalink: /publication/2015-10-01-paper-title-number-4
-excerpt: 'This paper is about the number 3. The number 4 is left for future work.'
+excerpt: 'In the evolving field of wireless technology, Integrated Sensing and Communication (ISAC) presents a revolutionary paradigm by intertwining radar sensing with wireless communications for enhanced performance and resource efficiency. This study introduces two innovative approaches for estimating the angle of arrival and departure in bistatic ISAC systems. Our methods employ a deep learning framework utilizing complex neural networks and a specialized algorithm that both capitalize on a refined channel matrix. Notably, by integrating a preliminary coarse timing estimation phase, we successfully streamline the input data, boosting the system's computational efficiency. Our results highlight the deep learning method's efficiency, showcasing its ability to match the performance of a more traditional approach reliant on the MIMO model, yet with considerably less computational demand.'
 date: 2015-10-01
 venue: 'Journal 1'
 paperurl: 'http://academicpages.github.io/files/paper3.pdf'

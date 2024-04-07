@@ -82,6 +82,21 @@ Teaching
   {{ content_without_section | strip_newlines }}
 </div>
 
+Honors & Awards
+======
+
+{% capture teaching_content %}
+  {% include_relative honors.html %}
+{% endcapture %}
+
+{% assign marker = "---" %} 
+{% assign content_without_section = teaching_content | split: marker | last %}
+
+<div>
+  {{ content_without_section | strip_newlines }}
+</div>
+
+
   
 Service
 ======

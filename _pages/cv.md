@@ -47,9 +47,13 @@ Publications
   {% include_relative publications.md %}
 {% endcapture %}
 
-  <ul>
-    {{ publications_content | markdownify }}
-  </ul>
+{% assign fm_ender = "---" %}
+{% assign content_without_fm = publications_content | split: fm_ender | last %}
+
+<ul>
+  {{ content_without_fm | markdownify }}
+</ul>
+
 
 
 Talks

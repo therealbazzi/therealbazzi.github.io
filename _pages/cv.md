@@ -11,9 +11,12 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+🎓 **PhD in Electrical Engineering** (2014-2017)
+  *EURECOM / Communication Systems*
+🎓 **MSc in Electrical Engineering** (2013-2014)
+  *CentraleSupélec / SAR*
+🎓 **BSc in Electrical and Computer Engineering** (2009-2014)
+  *Lebanese University, Faculty of Engineering III*
 
 Work experience
 ======

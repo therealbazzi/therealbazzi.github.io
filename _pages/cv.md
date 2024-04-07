@@ -64,9 +64,18 @@ Talks
   
 Teaching
 ======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+
+{% capture teaching_content %}
+  {% include_relative teaching.html %}
+{% endcapture %}
+
+{% assign marker = "<!-- End of Skip Section -->" %} {# Adjust this marker to match your HTML #}
+{% assign content_without_section = teaching_content | split: marker | last %}
+
+<div>
+  {{ content_without_section | strip_newlines }}
+</div>
+
   
 Service
 ======

@@ -16,7 +16,7 @@ Education
 
 🎓 **MSc in Electrical Engineering** (2013-2014)
   *CentraleSupélec / SAR*
-  
+
 🎓 **BSc in Electrical and Computer Engineering** (2009-2014)
   *Lebanese University, Faculty of Engineering III*
 
@@ -50,6 +50,19 @@ Publications
 ======
 {% capture publications_content %}
   {% include_relative publications.md %}
+{% endcapture %}
+
+{% assign fm_ender = "---" %}
+{% assign content_without_fm = publications_content | split: fm_ender | last %}
+
+<ul>
+  {{ content_without_fm | markdownify }}
+</ul>
+
+Patents
+======
+{% capture publications_content %}
+  {% include_relative patents.md %}
 {% endcapture %}
 
 {% assign fm_ender = "---" %}

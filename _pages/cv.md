@@ -79,6 +79,13 @@ Teaching
   
 Service
 ======
-  <ul>{% for post in site.service reversed %}
-    {% include archive-single-service-cv.html %}
-  {% endfor %}</ul>
+{% capture publications_content %}
+  {% include_relative service.md %}
+{% endcapture %}
+
+{% assign fm_ender = "---" %}
+{% assign content_without_fm = publications_content | split: fm_ender | last %}
+
+<ul>
+  {{ content_without_fm | markdownify }}
+</ul>

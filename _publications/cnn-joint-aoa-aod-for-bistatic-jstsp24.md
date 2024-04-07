@@ -1,7 +1,7 @@
 ---
 title: "Complex Neural Network based Joint AoA and AoD Estimation for Bistatic ISAC"
 collection: publications
-permalink: /publication/2015-10-01-paper-title-number-4
+permalink: /publication/cnn-joint-aoa-aod-for-bistatic-jstsp24
 excerpt: 'Integrated sensing and communication (ISAC) in wireless systems is a promising paradigm that combines radar sensing and wireless communications for improved performance. In our study, we propose two novel methods for joint angle of arrival and angle of departure estimation in bistatic ISAC systems. Our approach involves deep learning (DL) and a parameterized algorithm, enhancing computational efficiency while maintaining accuracy. Simulations reveal that our DL-based solution shows comparable performance to traditional methods with significantly lower complexity.'
 date: 2024-03-29
 venue: 'IEEE Journal of Selected Topics in Signal Processing'

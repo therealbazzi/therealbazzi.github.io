@@ -22,20 +22,16 @@ Education
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * Github University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
-
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* **Research Scientist** (Now)
+  *New York University (NYU) Abu Dhabi*
+* **Research Associate** (2022-2024)
+  *New York University (NYU) Abu Dhabi*
+* **Algorithm and Signal Processing Team Leader** (2021-2022)
+  *CEVA-DSP*
+* **Signal Processing Engineer** (2017-2021)
+  *CEVA-DSP*
+* **Signal Processing Engineer intern** (Summer 2014)
+  *RivieraWaves*
   
 Skills
 ======

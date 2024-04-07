@@ -69,7 +69,7 @@ Teaching
   {% include_relative teaching.html %}
 {% endcapture %}
 
-{% assign marker = "<!-- End of Skip Section -->" %} {# Adjust this marker to match your HTML #}
+{% assign marker = "<!-- End of Skip Section -->" %} 
 {% assign content_without_section = teaching_content | split: marker | last %}
 
 <div>

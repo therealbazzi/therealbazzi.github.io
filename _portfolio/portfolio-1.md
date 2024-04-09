@@ -1,6 +1,6 @@
 ---
 title: "Lecture 1, Convex Optimization, Introduction by Dr. Ahmad Bazzi"
-excerpt: "An overview of Lecture 1, Convex Optimization, Introduction by Dr. Ahmad Bazzi<br/><img src='/images/500x300.png'>"
+excerpt: "What is Convex Optimization? <br/><img src='/images/500x300.png'>"
 collection: portfolio
 ---
 

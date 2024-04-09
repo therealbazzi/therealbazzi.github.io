@@ -32,5 +32,3 @@ For a detailed understanding and examples, you can refer to specific parts of th
 - Challenges in optimization and concluding remarks [18:23](https://www.youtube.com/watch?v=SHJuGASZwlE&t=1103s).
 
 The lecture is the first in a series on convex optimization and sets the stage for a deeper dive into the subject matter in subsequent lectures. It was delivered by Dr. Ahmad Bazzi and has garnered 72,419 views. The lecture is part of a series and spans a length of approximately 48 minutes. For more detailed discussions, you might want to watch the video or follow the series on [Ahmad Bazzi's YouTube channel](https://www.youtube.com/Ahmad Bazzi).
-
-Since the transcription indicated that there are more pages, I can fetch more details from the subsequent pages if you're interested in a more comprehensive summary.

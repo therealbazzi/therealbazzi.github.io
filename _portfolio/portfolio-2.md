@@ -1,5 +1,5 @@
 ---
-title: "Portfolio item number 2"
+title: "What are Convex Sets?"
 excerpt: "What are convex sets? <br/><img src='/images/500x300.png'>"
 collection: portfolio
 ---

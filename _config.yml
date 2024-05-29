@@ -25,7 +25,7 @@ author:
   name             : "Ahmad Bazzi"
   pronouns         : # example: "she/her"  
   bio              : "Research Scientist"
-  location         : "Earth"
+  location         :
   employer         : "New York University"
   uri              : # URL
   email            : "none@example.org" 

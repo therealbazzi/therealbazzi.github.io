@@ -25,10 +25,10 @@ author:
   name             : "Ahmad Bazzi"
   pronouns         : # example: "she/her"  
   bio              : "Research Scientist"
-  location         :
+  location         : 
   employer         : "New York University"
   uri              : https://nyuad.nyu.edu/en/research/postdoctoral-research/researchers/research-bios/ahmad-bazzi.html
-  email            : "none@example.org" 
+  email            : "ahmad.bazzi@hotmail.com" 
 
   # Academic websites
   arxiv            : "https://arxiv.org/search/?query=ahmad+bazzi&searchtype=author&abstracts=show&order=-announced_date_first&size=50"

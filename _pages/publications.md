@@ -12,6 +12,7 @@ author_profile: true
 {% include base_path %}
 
 ## Journals
+* A. Magbool, V. Kumar, **A. Bazzi**, M. F. Flanagan and M. Chafii, "Multi-Functional RIS for a Multi-Functional System: Integrating Sensing, Communication, and Wireless Power Transfer," in *IEEE Network*, doi: 10.1109/MNET.2024.3482571.[[paper]](https://ieeexplore.ieee.org/document/10720877)[[arXiv]](https://arxiv.org/pdf/2410.08715)
 * S. Naoumi, **A. Bazzi**\*, R. Bomfin and M. Chafii “Complex Neural Network based Joint AoA and AoD Estimation for Bistatic ISAC”, in *IEEE Journal of Selected Topics in Signal Processing*, March. 2024.[[paper]](https://ieeexplore.ieee.org/abstract/document/10496165)[[arXiv]](https://arxiv.org/pdf/2404.00582.pdf)[``[code]``](https://github.com/salmane-s9/Bistatic_ISAC) 
 * A. Chowdary, **A. Bazzi**\* and M. Chafii, "On Hybrid Radar Fusion for Integrated Sensing and Communication," in *IEEE Transactions on Wireless Communications*, doi: 10.1109/TWC.2024.3357573. [[paper]](https://ieeexplore.ieee.org/abstract/document/10417003)[[arXiv]](https://arxiv.org/abs/2303.05722)
 * **A. Bazzi**\* and M. Chafii, "Secure Full Duplex Integrated Sensing and Communications," in *IEEE Transactions on Information Forensics and Security*, vol. 19, pp. 2082-2097, 2024, doi: 10.1109/TIFS.2023.3346696. [[paper]](https://ieeexplore.ieee.org/abstract/document/10373185)[[arXiv]](https://arxiv.org/abs/2312.11367)[[nyuscholars]](https://nyuscholars.nyu.edu/en/publications/secure-full-duplex-integrated-sensing-and-communications)

@@ -4,7 +4,7 @@ excerpt: "What is Convex Optimization? <br/><img src='/images/500x300.png'>"
 collection: portfolio
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/SHJuGASZwlE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SHJuGASZwlE?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 The video titled "Lecture 1 | Convex Optimization | Introduction by Dr. Ahmad Bazzi" covers a comprehensive introduction to convex optimization. Here's a summary:

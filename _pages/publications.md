@@ -12,7 +12,7 @@ author_profile: true
 {% include base_path %}
 
 ## Journals
-* **A. Bazzi**\* and M. Chafii, "Low Dynamic Range for RIS-aided Bistatic Integrated Sensing and Communication," accepted in *IEEE Journal on Selected Areas in Communications*, 2024 [[arXiv]](https://arxiv.org/pdf/2411.06117)
+* **A. Bazzi**\* and M. Chafii, "Low Dynamic Range for RIS-aided Bistatic Integrated Sensing and Communication," in IEEE Journal on Selected Areas in Communications, doi: 10.1109/JSAC.2025.3531533. [[paper]](https://ieeexplore.ieee.org/document/10854667)[[arXiv]](https://arxiv.org/pdf/2411.06117)
 * A. Magbool, V. Kumar, **A. Bazzi**, M. F. Flanagan and M. Chafii, "Multi-Functional RIS for a Multi-Functional System: Integrating Sensing, Communication, and Wireless Power Transfer," in *IEEE Network*, doi: 10.1109/MNET.2024.3482571.[[paper]](https://ieeexplore.ieee.org/document/10720877)[[arXiv]](https://arxiv.org/pdf/2410.08715)
 * S. Naoumi, **A. Bazzi**\*, R. Bomfin and M. Chafii “Complex Neural Network based Joint AoA and AoD Estimation for Bistatic ISAC”, in *IEEE Journal of Selected Topics in Signal Processing*, March. 2024.[[paper]](https://ieeexplore.ieee.org/abstract/document/10496165)[[arXiv]](https://arxiv.org/pdf/2404.00582.pdf)[``[code]``](https://github.com/salmane-s9/Bistatic_ISAC) 
 * A. Chowdary, **A. Bazzi**\* and M. Chafii, "On Hybrid Radar Fusion for Integrated Sensing and Communication," in *IEEE Transactions on Wireless Communications*, doi: 10.1109/TWC.2024.3357573. [[paper]](https://ieeexplore.ieee.org/abstract/document/10417003)[[arXiv]](https://arxiv.org/abs/2303.05722)

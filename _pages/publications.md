@@ -6,9 +6,8 @@ author_profile: true
 ---
 
 {% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
+  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a> and <a href="https://www.scopus.com/authid/detail.uri?authorId=57188864047">Scopus</a>.</div>
 {% endif %}
-
 {% include base_path %}
 
 ## Journals

@@ -30,6 +30,7 @@ author_profile: true
 
 
 ## Conferences
+* **A. Bazzi** and M. Chafii, “Towards ISAC RIS-Enabled Passive Radar Target Localization””, accepted in *IEEE International Conference on Communications (ICC)*, June, 2025.[[arXiv]](https://arxiv.org/pdf/2502.18787)
 * **A. Bazzi** and M. Chafii, “Designing Waveforms with Adjustable PAPR for Integrated Sensing and Communication”, accepted in *IEEE International Conference on Communications (ICC)*, June, 2025.[[arXiv]](https://arxiv.org/pdf/2502.17938)
 * D. Shakya, M. Ying, T. S. Rappaport, P. Ma, I. Al-Wazani, Y. Wu, Y. Wang, D. Calin, H. Poddar, **A. Bazzi**, M. Chafii, Y. Xing, and A. Ghosh, “Urban Outdoor Propagation Measurements and Channel Models at 6.75 GHz FR1(C) and 16.95 GHz FR3 Upper Mid-band Spectrum for 5G and 6G,” *IEEE International Conference on Communications (ICC)*, Montreal, Canada, Jun. 2025, pp. 1–6. [[arXiv]](https://arxiv.org/pdf/2410.17539)
 * D. Wang, **A. Bazzi** and M. Chafii, "RIS-Enabled Integrated Sensing and Communication for 6G Systems," *2024 IEEE Wireless Communications and Networking Conference (WCNC)*, Dubai, United Arab Emirates, 2024, pp. 1-6, doi: 10.1109/WCNC57260.2024.10571090. [[arXiv]](https://arxiv.org/abs/2401.00444) [[paper]](https://ieeexplore.ieee.org/abstract/document/10571090)

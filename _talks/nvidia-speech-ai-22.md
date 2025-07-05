@@ -1,7 +1,7 @@
 ---
 title: "Speech AI Summit"
 collection: talks
-type: "Conference talk"
+type: "Invited talk"
 permalink: /talks/nvidia-speech-ai-22
 venue: "NVIDIA GTC 2022"
 date: 2022-11-02

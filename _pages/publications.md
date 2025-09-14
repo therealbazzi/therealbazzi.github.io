@@ -11,6 +11,7 @@ author_profile: true
 {% include base_path %}
 
 ## Journals
+* **A. Bazzi**\*, R. Bomfin, M. Mezzavilla, S. Rangan, T. S. Rappaport and M. Chafi,  "Upper mid-band spectrum for 6G: Vision, opportunity and challenges," in *IEEE Communications Magazine*, 2025 [[arXiv]](https://arxiv.org/pdf/2502.17914)
 * **A. Bazzi**\* and M. Chafii,  "Mutual Information Based Pilot Design for ISAC," in *IEEE Transactions on Communications*, doi: 10.1109/TCOMM.2025.3545658.2025.[[paper]](https://ieeexplore.ieee.org/document/10904093)[[arXiv]](https://arxiv.org/pdf/2306.13003)
 * **A. Bazzi**\* and M. Chafii, "Low Dynamic Range for RIS-aided Bistatic Integrated Sensing and Communication," in *IEEE Journal on Selected Areas in Communications*, doi: 10.1109/JSAC.2025.3531533. [[paper]](https://ieeexplore.ieee.org/document/10854667)[[arXiv]](https://arxiv.org/pdf/2411.06117)
 * A. Magbool, V. Kumar, **A. Bazzi**, M. F. Flanagan and M. Chafii, "Multi-Functional RIS for a Multi-Functional System: Integrating Sensing, Communication, and Wireless Power Transfer," in *IEEE Network*, doi: 10.1109/MNET.2024.3482571.[[paper]](https://ieeexplore.ieee.org/document/10720877)[[arXiv]](https://arxiv.org/pdf/2410.08715)

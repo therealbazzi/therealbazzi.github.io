@@ -11,6 +11,7 @@ author_profile: true
 {% include base_path %}
 
 ## Journals
+* **A. Bazzi**\*, M. Ying, O. Kanhere, T. S. Rappaport and M. Chafii, "ISAC Imaging by Channel State Information using Ray Tracing for Next Generation 6G," in *IEEE Journal of Selected Topics in Electromagnetics, Antennas and Propagation*, doi: 10.1109/JSTEAP.2025.3605877. [[arXiv]](https://arxiv.org/pdf/2509.06672)[[paper]](https://ieeexplore.ieee.org/document/11173662)
 * **A. Bazzi**\*, R. Bomfin, M. Mezzavilla, S. Rangan, T. S. Rappaport and M. Chafii,  "Upper mid-band spectrum for 6G: Vision, opportunity and challenges," in *IEEE Communications Magazine*, 2025 [[arXiv]](https://arxiv.org/pdf/2502.17914)
 * **A. Bazzi**\* and M. Chafii,  "Mutual Information Based Pilot Design for ISAC," in *IEEE Transactions on Communications*, doi: 10.1109/TCOMM.2025.3545658.2025.[[paper]](https://ieeexplore.ieee.org/document/10904093)[[arXiv]](https://arxiv.org/pdf/2306.13003)
 * **A. Bazzi**\* and M. Chafii, "Low Dynamic Range for RIS-aided Bistatic Integrated Sensing and Communication," in *IEEE Journal on Selected Areas in Communications*, doi: 10.1109/JSAC.2025.3531533. [[paper]](https://ieeexplore.ieee.org/document/10854667)[[arXiv]](https://arxiv.org/pdf/2411.06117)

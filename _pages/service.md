@@ -5,6 +5,9 @@ permalink: /service/
 author_profile: true
 ---
 
+## Editorial Roles
+* IEEE Communications Letters, 2025-2026
+
 ## Reviewer for Journals
 * IEEE Transactions on Wireless Communications
 * IEEE Transactions on Communications

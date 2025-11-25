@@ -7,6 +7,9 @@ author_profile: true
 
 ## Editorial Roles
 * IEEE Communications Letters, 2025-2026
+* IEEE Open Journal of the Communications Society (OJ-COMS), 2025-2026
+* IEEE Open Journal of the Communications Society (OJ-COMS), Special Issue on *"Resilient and Trustworthy Communications for 6G Smart Wireless Environments: Integrating Sensing, AI, and Security in Smart Wireless Systems"*, 2025-2026
+
 
 ## Reviewer for Journals
 * IEEE Transactions on Wireless Communications

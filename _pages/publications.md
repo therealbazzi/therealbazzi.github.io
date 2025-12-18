@@ -11,7 +11,7 @@ author_profile: true
 {% include base_path %}
 
 ## Journals
-* E. Illi, **A. Bazzi**, M. Qaraqe, and A. Ghrayeb. "On the Secrecy-Sensing Optimization of RIS-assisted Full-Duplex Integrated Sensing and Communication Network."  in *IEEE Transactions on Wireless Communications*, doi: 10.1109/TWC.2024.3357573. [[arXiv]](https://arxiv.org/pdf/2504.20912)
+* E. Illi, **A. Bazzi**, M. Qaraqe, and A. Ghrayeb. "On the Secrecy-Sensing Optimization of RIS-assisted Full-Duplex Integrated Sensing and Communication Network." in *IEEE Transactions on Wireless Communications*, 2025 [[arXiv]](https://arxiv.org/pdf/2504.20912)
 * S. Naoumi, **A. Bazzi**\*, R. Bomfin and M. Chafii "High-Resolution Sensing in Communication-Centric ISAC: Deep Learning and Parametric Methods," in *IEEE Journal on Selected Areas in Communications*, doi: 10.1109/JSAC.2025.3639350. [[paper]](https://ieeexplore.ieee.org/document/11272093)[[arXiv]](https://arxiv.org/abs/2509.02137)
 * **A. Bazzi**\*, M. Ying, O. Kanhere, T. S. Rappaport and M. Chafii, "ISAC Imaging by Channel State Information using Ray Tracing for Next Generation 6G," in *IEEE Journal of Selected Topics in Electromagnetics, Antennas and Propagation*, doi: 10.1109/JSTEAP.2025.3605877. [[arXiv]](https://arxiv.org/pdf/2509.06672)[[paper]](https://ieeexplore.ieee.org/document/11173662)
 * **A. Bazzi**\*, R. Bomfin, M. Mezzavilla, S. Rangan, T. S. Rappaport and M. Chafii,  "Upper mid-band spectrum for 6G: Vision, opportunity and challenges," in *IEEE Communications Magazine*, 2025 [[arXiv]](https://arxiv.org/pdf/2502.17914)

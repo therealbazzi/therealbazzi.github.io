@@ -10,3 +10,16 @@ package-lock.json
 
 # Ignore vendor directory (Ruby gems)
 vendor/
+
+# Ignore local bundler config
+.bundle/
+
+# Ignore macOS metadata files
+.DS_Store
+**/.DS_Store
+
+# Ignore editor/OS junk
+*.swp
+.idea/
+.vscode/
+Thumbs.db

@@ -136,7 +136,7 @@ social:
   links: # An array of links to social media profiles - powers sameAs in JSON-LD
     - "https://orcid.org/0000-0002-7645-352X"
     - "https://scholar.google.com/citations?hl=en&user=9HWunwcAAAAJ"
-    - "https://arxiv.org/a/bazzi_a_1"
+    - "https://arxiv.org/search/?query=ahmad+bazzi&searchtype=author"
     - "https://www.researchgate.net/profile/Ahmad-Bazzi"
     - "https://www.scopus.com/authid/detail.uri?authorId=57188864047"
     - "https://dblp.org/pid/62/10116.html"

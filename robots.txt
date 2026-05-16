@@ -1,0 +1,74 @@
+# robots.txt for https://therealbazzi.github.io
+# Policy: open access for search engines and AI systems.
+# Goal: maximize discoverability and citation of published research.
+
+# ---- General-purpose search crawlers ----
+User-agent: *
+Allow: /
+
+# ---- AI / LLM crawlers (training + retrieval) ----
+# Explicitly allowed so behavior is unambiguous to operators that honor robots.txt.
+
+# OpenAI
+User-agent: GPTBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+
+# Anthropic
+User-agent: ClaudeBot
+Allow: /
+User-agent: Claude-Web
+Allow: /
+User-agent: Claude-User
+Allow: /
+User-agent: Claude-SearchBot
+Allow: /
+User-agent: anthropic-ai
+Allow: /
+
+# Google (AI training is governed separately from Googlebot via Google-Extended)
+User-agent: Google-Extended
+Allow: /
+
+# Apple
+User-agent: Applebot
+Allow: /
+User-agent: Applebot-Extended
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+User-agent: Perplexity-User
+Allow: /
+
+# Common Crawl (used in many training corpora)
+User-agent: CCBot
+Allow: /
+
+# ByteDance / Doubao
+User-agent: Bytespider
+Allow: /
+
+# Meta
+User-agent: Meta-ExternalAgent
+Allow: /
+User-agent: FacebookBot
+Allow: /
+
+# Cohere
+User-agent: cohere-ai
+Allow: /
+
+# Diffbot, You.com, Kagi, Mistral, and others
+User-agent: Diffbot
+Allow: /
+User-agent: YouBot
+Allow: /
+User-agent: MistralAI-User
+Allow: /
+
+Sitemap: https://therealbazzi.github.io/sitemap.xml

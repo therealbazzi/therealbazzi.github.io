@@ -1,0 +1,104 @@
+{%- comment -%}
+  Highwire Press + Dublin Core citation meta tags.
+  Emitted on every publication page so Google Scholar, Semantic Scholar,
+  Zotero, Mendeley, and AI systems that look for these tags can index and
+  cite the work without scraping the body.
+
+  Supported front-matter (all optional except title/date):
+    title:        string  (required)
+    date:         YYYY-MM-DD  (required)
+    venue:        journal or conference name
+    paperurl:     direct PDF URL
+    doi:          10.xxxx/yyyy
+    arxiv_id:     2404.00582
+    authors:      [list, of, full, names]  OR
+    citation:     fallback HTML citation string
+    publisher:    e.g. "IEEE"
+    volume:       string
+    issue:        string
+    firstpage:    string
+    lastpage:     string
+    issn:         string
+    isbn:         string
+    abstract:     long form (falls back to excerpt)
+    keywords:     [list]
+    language:     ISO code, default en
+{%- endcomment -%}
+{%- if page.collection == 'publications' -%}
+{%- assign pub_title = page.title | strip_html | strip_newlines | escape_once -%}
+{%- assign pub_abstract = page.abstract | default: page.excerpt | strip_html | strip_newlines | escape_once -%}
+{%- assign pub_lang = page.language | default: 'en' -%}
+{%- assign canonical = page.url | prepend: site.baseurl | prepend: site.url -%}
+
+<!-- begin citation meta -->
+<meta name="citation_title" content="{{ pub_title }}">
+{%- if page.authors %}
+  {%- for a in page.authors %}
+<meta name="citation_author" content="{{ a }}">
+  {%- endfor %}
+{%- else %}
+<meta name="citation_author" content="{{ site.author.name }}">
+{%- endif %}
+{%- if page.date %}
+<meta name="citation_publication_date" content="{{ page.date | date: '%Y/%m/%d' }}">
+<meta name="citation_date" content="{{ page.date | date: '%Y/%m/%d' }}">
+<meta name="citation_year" content="{{ page.date | date: '%Y' }}">
+{%- endif %}
+{%- if page.venue %}
+<meta name="citation_journal_title" content="{{ page.venue | escape_once }}">
+<meta name="citation_conference_title" content="{{ page.venue | escape_once }}">
+{%- endif %}
+{%- if page.publisher %}
+<meta name="citation_publisher" content="{{ page.publisher | escape_once }}">
+{%- endif %}
+{%- if page.volume %}<meta name="citation_volume" content="{{ page.volume }}">{%- endif %}
+{%- if page.issue %}<meta name="citation_issue" content="{{ page.issue }}">{%- endif %}
+{%- if page.firstpage %}<meta name="citation_firstpage" content="{{ page.firstpage }}">{%- endif %}
+{%- if page.lastpage %}<meta name="citation_lastpage" content="{{ page.lastpage }}">{%- endif %}
+{%- if page.doi %}<meta name="citation_doi" content="{{ page.doi }}">{%- endif %}
+{%- if page.arxiv_id %}<meta name="citation_arxiv_id" content="{{ page.arxiv_id }}">{%- endif %}
+{%- if page.issn %}<meta name="citation_issn" content="{{ page.issn }}">{%- endif %}
+{%- if page.isbn %}<meta name="citation_isbn" content="{{ page.isbn }}">{%- endif %}
+{%- if page.paperurl %}
+<meta name="citation_pdf_url" content="{{ page.paperurl }}">
+<meta name="citation_fulltext_html_url" content="{{ canonical }}">
+{%- endif %}
+{%- if page.language %}<meta name="citation_language" content="{{ pub_lang }}">{%- endif %}
+{%- if page.keywords %}
+<meta name="citation_keywords" content="{{ page.keywords | join: '; ' | escape_once }}">
+{%- endif %}
+
+<!-- Dublin Core -->
+<meta name="DC.title" content="{{ pub_title }}">
+{%- if page.authors %}
+  {%- for a in page.authors %}
+<meta name="DC.creator" content="{{ a }}">
+  {%- endfor %}
+{%- else %}
+<meta name="DC.creator" content="{{ site.author.name }}">
+{%- endif %}
+{%- if page.date %}
+<meta name="DC.date" content="{{ page.date | date: '%Y-%m-%d' }}">
+{%- endif %}
+{%- if page.venue %}
+<meta name="DC.source" content="{{ page.venue | escape_once }}">
+{%- endif %}
+{%- if page.publisher %}
+<meta name="DC.publisher" content="{{ page.publisher | escape_once }}">
+{%- endif %}
+{%- if page.doi %}
+<meta name="DC.identifier" content="doi:{{ page.doi }}" scheme="DCTERMS.URI">
+{%- endif %}
+{%- if page.arxiv_id %}
+<meta name="DC.identifier" content="arXiv:{{ page.arxiv_id }}" scheme="DCTERMS.URI">
+{%- endif %}
+<meta name="DC.identifier" content="{{ canonical }}" scheme="DCTERMS.URI">
+{%- if pub_abstract %}
+<meta name="DC.description" content="{{ pub_abstract }}">
+<meta name="description" content="{{ pub_abstract | truncate: 300 }}">
+{%- endif %}
+<meta name="DC.language" content="{{ pub_lang }}">
+<meta name="DC.type" content="Text.ScholarlyArticle">
+<meta name="DC.rights" content="{{ site.author.name }}; please cite the canonical URL when referencing.">
+<!-- end citation meta -->
+{%- endif -%}

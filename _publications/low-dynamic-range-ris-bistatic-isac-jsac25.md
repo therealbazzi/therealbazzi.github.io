@@ -3,9 +3,14 @@ title: "Low Dynamic Range for RIS-Aided Bistatic Integrated Sensing and Communic
 collection: publications
 permalink: /publication/low-dynamic-range-ris-bistatic-isac-jsac25
 excerpt: 'A reconfigurable intelligent surface (RIS) aided bistatic ISAC architecture engineered for low dynamic range, easing receiver hardware constraints while preserving sensing and communication performance.'
-date: 2025-01-15
+date: 2025-03-01
 venue: 'IEEE Journal on Selected Areas in Communications'
 publisher: 'IEEE'
+volume: "43"
+issue: "3"
+firstpage: "912"
+lastpage: "927"
+doi: "10.1109/JSAC.2025.3531533"
 authors:
   - "Ahmad Bazzi"
   - "Marwa Chafii"

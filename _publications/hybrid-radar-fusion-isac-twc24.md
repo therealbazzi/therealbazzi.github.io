@@ -10,6 +10,7 @@ volume: "23"
 issue: "8"
 firstpage: "8984"
 lastpage: "9000"
+doi: "10.1109/TWC.2024.3357402"
 authors:
   - "Akhileswar Chowdary"
   - "Ahmad Bazzi"

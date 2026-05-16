@@ -2,10 +2,13 @@
 title: "Upper Mid-Band Spectrum for 6G: Vision, Opportunity and Challenges"
 collection: publications
 permalink: /publication/upper-mid-band-spectrum-6g-2025
-excerpt: 'A vision paper on the upper mid-band (FR3) spectrum (7.125–24.25 GHz) for 6G wireless: opportunities, channel modeling, and standardization-relevant empirical results, including path loss and delay spreads.'
-date: 2025-02-25
-venue: 'arXiv preprint'
-publisher: 'arXiv'
+excerpt: 'Driven by the pursuit of gigabit-per-second data speeds for future 6G mobile networks and the support of sensing and AI applications, this paper charts a vision for 6G within the FR3 spectrum (7.125–24.25 GHz). It reviews recent channel measurements (path loss, delay and angular spreads, material penetration loss), examines spectrum-agility strategies, coexistence with incumbents, massive MIMO, and multiband sensing for integrated sensing and communications.'
+date: 2026-01-01
+venue: 'IEEE Communications Magazine'
+publisher: 'IEEE'
+volume: "64"
+issue: "1"
+doi: "10.1109/MCOM.001.2500101"
 authors:
   - "Ahmad Bazzi"
   - "Roberto Bomfin"

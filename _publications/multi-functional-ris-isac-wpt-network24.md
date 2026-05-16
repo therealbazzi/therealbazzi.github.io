@@ -3,9 +3,14 @@ title: "Multi-functional RIS for a Multi-functional System: Integrating Sensing,
 collection: publications
 permalink: /publication/multi-functional-ris-isac-wpt-network24
 excerpt: 'A multi-functional reconfigurable intelligent surface (RIS) that simultaneously supports sensing, communication, and wireless power transfer (WPT) in a single integrated system.'
-date: 2024-10-01
+date: 2025-01-01
 venue: 'IEEE Network'
 publisher: 'IEEE'
+volume: "39"
+issue: "1"
+firstpage: "71"
+lastpage: "79"
+doi: "10.1109/MNET.2024.3482571"
 authors:
   - "Ahmed Magbool"
   - "Vaibhav Kumar"

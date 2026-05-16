@@ -1,6 +1,7 @@
 # robots.txt for https://therealbazzi.github.io
 # Policy: open access for search engines and AI systems.
 # Goal: maximize discoverability and citation of published research.
+# Full AI usage and attribution policy: https://therealbazzi.github.io/ai-citation-policy/
 
 # ---- General-purpose search crawlers ----
 User-agent: *

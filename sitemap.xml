@@ -1,16 +1,43 @@
+---
+layout: null
+sitemap: false
+---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://therealbazzi.github.io/</loc>
-    <lastmod>2024-07-22</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>{{ site.url }}{{ site.baseurl }}/</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-  <!-- Add more URLs here if needed -->
+  {%- assign collections = site.collections | where_exp: "c", "c.output" %}
+  {%- for collection in collections %}
+    {%- assign docs = site[collection.label] %}
+    {%- for doc in docs %}
+      {%- unless doc.sitemap == false %}
   <url>
-    <loc>https://therealbazzi.github.io/publications</loc>
-    <lastmod>2024-07-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>{{ site.url }}{{ site.baseurl }}{{ doc.url }}</loc>
+    {%- if doc.date %}
+    <lastmod>{{ doc.date | date_to_xmlschema }}</lastmod>
+    {%- else %}
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    {%- endif %}
+    <changefreq>{% if collection.label == 'publications' or collection.label == 'talks' %}yearly{% else %}monthly{% endif %}</changefreq>
+    <priority>{% if collection.label == 'publications' %}0.9{% elsif collection.label == 'talks' %}0.8{% else %}0.7{% endif %}</priority>
   </url>
+      {%- endunless %}
+    {%- endfor %}
+  {%- endfor %}
+  {%- for page in site.pages %}
+    {%- unless page.sitemap == false or page.url contains '.xml' or page.url contains '.txt' or page.url contains '404' %}
+      {%- if page.url contains '.html' or page.url contains '/' %}
+  <url>
+    <loc>{{ site.url }}{{ site.baseurl }}{{ page.url | replace: '/index.html', '/' }}</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+      {%- endif %}
+    {%- endunless %}
+  {%- endfor %}
 </urlset>

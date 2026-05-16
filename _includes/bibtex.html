@@ -1,0 +1,92 @@
+{%- comment -%}
+  Auto-generated BibTeX block for publication pages.
+  Reads the same front-matter the citation-meta include uses:
+    authors (list), title, date, venue, publisher, volume, issue,
+    firstpage, lastpage, doi, arxiv_id.
+  Falls back gracefully when fields are missing.
+  Includes a copy-to-clipboard button.
+{%- endcomment -%}
+{%- if page.collection == 'publications' -%}
+
+{%- assign year = page.date | date: '%Y' -%}
+{%- assign month_lc = page.date | date: '%b' | downcase -%}
+
+{%- comment -%} Build a stable BibTeX key: lastname + year + first content word. {%- endcomment -%}
+{%- if page.authors and page.authors[0] -%}
+  {%- assign first_author = page.authors[0] -%}
+  {%- assign name_parts = first_author | split: ' ' -%}
+  {%- assign last_name = name_parts | last | downcase | replace: ',', '' -%}
+{%- else -%}
+  {%- assign last_name = 'bazzi' -%}
+{%- endif -%}
+{%- assign title_words = page.title | strip_html | downcase | split: ' ' -%}
+{%- assign first_word = '' -%}
+{%- for w in title_words -%}
+  {%- assign clean = w | replace: ',', '' | replace: '.', '' | replace: ':', '' -%}
+  {%- if clean.size > 3 and first_word == '' -%}
+    {%- assign first_word = clean -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- assign bibkey = last_name | append: year | append: first_word -%}
+
+{%- comment -%} Authors joined with " and " (BibTeX standard). {%- endcomment -%}
+{%- capture authors_bib -%}
+{%- if page.authors -%}
+  {%- for a in page.authors -%}{{ a }}{% unless forloop.last %} and {% endunless %}{%- endfor -%}
+{%- else -%}
+  {{ site.author.name }}
+{%- endif -%}
+{%- endcapture -%}
+
+{%- capture bibtex -%}
+@article{{ '{' }}{{ bibkey }},
+  title   = { {{- page.title | strip_html -}} },
+  author  = { {{- authors_bib -}} },
+{%- if page.venue %}
+  journal = { {{- page.venue -}} },
+{%- endif %}
+{%- if page.volume %}
+  volume  = { {{- page.volume -}} },
+{%- endif %}
+{%- if page.issue %}
+  number  = { {{- page.issue -}} },
+{%- endif %}
+{%- if page.firstpage and page.lastpage %}
+  pages   = { {{- page.firstpage -}}--{{- page.lastpage -}} },
+{%- elsif page.firstpage %}
+  pages   = { {{- page.firstpage -}} },
+{%- endif %}
+  year    = { {{- year -}} },
+  month   = { {{- month_lc -}} },
+{%- if page.publisher %}
+  publisher = { {{- page.publisher -}} },
+{%- endif %}
+{%- if page.doi %}
+  doi     = { {{- page.doi -}} },
+  url     = {https://doi.org/{{ page.doi }}},
+{%- elsif page.arxiv_id %}
+  eprint  = { {{- page.arxiv_id -}} },
+  archivePrefix = {arXiv},
+  url     = {https://arxiv.org/abs/{{ page.arxiv_id }}},
+{%- else %}
+  url     = { {{- page.url | prepend: site.baseurl | prepend: site.url -}} },
+{%- endif %}
+{%- if page.arxiv_id and page.doi %}
+  eprint  = { {{- page.arxiv_id -}} },
+  archivePrefix = {arXiv},
+{%- endif %}
+}
+{%- endcapture -%}
+
+<details class="bibtex-block" style="margin-top: 1.5em; border: 1px solid #e1e4e8; border-radius: 6px; padding: 0.5em 1em;">
+  <summary style="cursor: pointer; font-weight: 600;">Show BibTeX</summary>
+  <div style="position: relative; margin-top: 0.75em;">
+    <button type="button"
+            onclick="(function(b){var t=b.parentNode.querySelector('pre.bibtex-code').innerText;navigator.clipboard.writeText(t).then(function(){b.innerText='Copied!';setTimeout(function(){b.innerText='Copy';},1500);});})(this)"
+            style="position: absolute; top: 0.5em; right: 0.5em; padding: 0.25em 0.75em; font-size: 0.85em; cursor: pointer; border: 1px solid #d0d7de; border-radius: 4px; background: #f6f8fa;">
+      Copy
+    </button>
+<pre class="bibtex-code" style="background: #f6f8fa; padding: 1em; border-radius: 4px; overflow-x: auto; font-size: 0.85em; line-height: 1.4; margin: 0;"><code>{{ bibtex | strip }}</code></pre>
+  </div>
+</details>
+{%- endif -%}

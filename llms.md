@@ -21,6 +21,8 @@ This file is provided to help large-language-model crawlers and AI systems
 this researcher's work. All content here is public; please link back to the
 canonical URLs above when quoting or paraphrasing.
 
+Full attribution policy: {{ site.url }}{{ site.baseurl }}/ai-citation-policy/
+
 ## About
 
 - [Biography]({{ site.url }}{{ site.baseurl }}/): Home page with current affiliation, research interests, and contact.

@@ -1,0 +1,13 @@
+---
+title: "Recent Advances on Integrated Sensing and Communications for 6G"
+collection: talks
+type: "Invited talk"
+permalink: /talks/spcc-26
+venue: "IEEE Communications Society Signal Processing and Computing for Communications (SPCC) Technical Committee"
+date: 2026-05-07
+location: "Virtual"
+---
+
+**Abstract**: As the global wireless industry advances toward 6G, we are transitioning beyond traditional connectivity into a paradigm where networks must see and perceive their surroundings. Integrated sensing and communications (ISAC) has emerged as a fundamental technology, motivated by the need for spectrum efficiency, hardware resource sharing, and the demands of bandwidth-hungry applications like haptic telemedicine and autonomous driving, in addition to sensing the environment surrounding. However, this integration faces significant challenges, including the contrasting nature of sensing and communication objectives for waveforms, receiver design and the high peak-to-average power ratio (PAPR) inherent in modern waveforms. This talk presents a comprehensive overview of our research across broad lines of ISAC technology, demonstrating its multifaceted nature. For physical layer (PHY) ISAC design, at the transmitter side, I introduce novel ISAC beamforming and waveform techniques, which optimizes the use of the same signal both for target detection and for serving multiple communication users. Moreover, we will introduce ISAC pilots that have good properties in estimating the communication channel and sensing targets with proven impact on probability of detection and channel capacity. Moreover, at the receiver side, I showcase advancements in sensing estimation and imaging, including hybrid radar fusion models that combine monostatic and bistatic sensing. I also introduce deep learning and parametric methods for super-resolution joint estimation, in addition to an ISAC imaging modeling framework that utilizes ray-tracing-derived CSI to reconstruct 3D environments with high fidelity. Together, these research lines converge towards a perceptive 6G future. Addressing the critical pillar of security and privacy of ISAC, our work also explores secure beamforming and artificial noise (AN) generation for ISAC systems that ensure communication secrecy in the presence of malicious eavesdroppers which are also to be sensed, creating a dilemma. Finally, I present recent channel modeling and experimental work conducted characterizing the upper mid-band (FR3) spectrum (7.125-24.25 GHz), which provide essential empirical data including path loss and delay spreads that informed 3GPP standardization.
+
+🔗 [Link](https://ieeetv.ieee.org/video/recent-advances-on-integrated-sensing-and-communications-for-6g)

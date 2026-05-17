@@ -1,7 +1,7 @@
 {%- comment -%}
-  JSON-LD structured data.
-  - Person knowledge card on the homepage and any page with `is_homepage: true`.
-  - ScholarlyArticle on every publication page.
+JSON-LD structured data.
+- Person knowledge card on the homepage and any page with `is_homepage: true`.
+- ScholarlyArticle on every publication page.
 {%- endcomment -%}
 
 {%- if page.url == '/' or page.is_homepage -%}
@@ -79,11 +79,42 @@
     "{{ site.author.scopus }}",
     "https://dblp.org/pid/{{ site.author.dblp }}.html",
     "https://www.semanticscholar.org/author/Ahmad-Bazzi/2344210",
+    "https://ahmadbazzi.alphaxiv.io/",
+    "https://ieeexplore.ieee.org/author/37085661004",
+    "https://nyuad.nyu.edu/en/research/postdoctoral-research/researchers/research-bios/ahmad-bazzi.html",
     "https://github.com/{{ site.author.github }}",
     "https://www.linkedin.com/in/{{ site.author.linkedin }}",
     "https://x.com/{{ site.author.twitter }}",
     "https://www.youtube.com/channel/{{ site.author.youtube }}",
     "https://www.instagram.com/{{ site.author.instagram }}/"
+  ],
+  "alumniOf": [
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "EURECOM",
+      "url": "https://www.eurecom.fr/",
+      "description": "PhD in Electrical Engineering, 2017"
+    },
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "CentraleSupélec",
+      "url": "https://www.centralesupelec.fr/",
+      "description": "MSc in Wireless Communication Systems, 2014"
+    },
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "Lebanese University",
+      "description": "BSc in Electrical and Computer Engineering, 2014"
+    }
+  ],
+  "award": [
+    "Exemplary Reviewer, IEEE Open Journal of the Communications Society, 2025",
+    "Top 200 Influencers in Arab World, 2023",
+    "YouTube Silver Plate Creator Award, 2022",
+    "Exemplary Reviewer, IEEE Transactions on Communications, 2022",
+    "Exemplary Reviewer, IEEE Wireless Communications Letters, 2022",
+    "Best Student Paper Award Nominee, IEEE ICASSP, 2016",
+    "CIFRE Scholarship, ANRT France, 2014"
   ],
   "knowsAbout": [
     "Signal Processing",

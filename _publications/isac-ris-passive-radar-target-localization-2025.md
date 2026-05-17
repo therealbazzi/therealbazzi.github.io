@@ -2,7 +2,7 @@
 title: "Towards ISAC RIS-Enabled Passive Radar Target Localization"
 collection: publications
 permalink: /publication/isac-ris-passive-radar-target-localization-2025
-excerpt: 'A passive radar target-localization scheme for ISAC systems that exploits reconfigurable intelligent surfaces (RIS) to provide spatial diversity without requiring an active illuminator.'
+excerpt: 'A passive radar (PR) scenario where the PR receives weak line-of-sight signals of opportunity from an access point that subsequently reflect off targets. A normalized LMS method jointly detects the number of targets and estimates angles of arrival, iteratively adjusting steering-vector estimates to minimize an error cost; AoAs are then identified via peak-finding on the power spectrum. Simulations demonstrate a 14 dB dynamic-range reduction at the PR. Accepted at IEEE ICC 2025.'
 date: 2025-02-25
 venue: 'IEEE Conference Proceedings'
 publisher: 'IEEE'

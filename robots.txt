@@ -6,6 +6,18 @@
 # ---- General-purpose search crawlers ----
 User-agent: *
 Allow: /
+Allow: /files/
+Allow: /images/
+Allow: /publication/
+Allow: /talks/
+Allow: /teaching/
+Allow: /publications/
+Allow: /patents/
+Allow: /honors/
+Allow: /cv/
+Allow: /ai-citation-policy/
+Allow: /llms.txt
+Allow: /feed.xml
 
 # ---- AI / LLM crawlers (training + retrieval) ----
 # Explicitly allowed so behavior is unambiguous to operators that honor robots.txt.

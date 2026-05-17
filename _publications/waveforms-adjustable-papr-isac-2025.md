@@ -2,7 +2,7 @@
 title: "Designing Waveforms with Adjustable PAPR for Integrated Sensing and Communication"
 collection: publications
 permalink: /publication/waveforms-adjustable-papr-isac-2025
-excerpt: 'A waveform design framework for ISAC systems that allows the peak-to-average power ratio (PAPR) to be tuned to system constraints while preserving sensing and communication performance.'
+excerpt: 'A new optimization framework for ISAC waveform design that maximizes total achievable sum-rate via multi-user interference minimization while preserving similarity to a desired radar waveform. The design offers flexible tuning of the peak-to-average power ratio (PAPR) to feasible levels for practical physical-layer architectures. A non-convex optimization is formulated and solved via ADMM, with simulations validating superiority over state-of-the-art baselines. Accepted at IEEE ICC 2025.'
 date: 2025-02-25
 venue: 'IEEE Conference Proceedings'
 publisher: 'IEEE'

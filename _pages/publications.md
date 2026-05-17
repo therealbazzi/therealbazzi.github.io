@@ -3,12 +3,46 @@ layout: archive
 title: "Publications"
 permalink: /publications/
 author_profile: true
+description: "Peer-reviewed publications by Ahmad Bazzi: integrated sensing and communication (ISAC), MIMO, RIS, deep learning for wireless, AoA/JADE estimation, chirp spread spectrum. Indexed by IEEE Xplore, arXiv, Google Scholar, DBLP, Scopus."
 ---
 
 {% if site.author.googlescholar %}
   <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a> and <a href="https://www.scopus.com/authid/detail.uri?authorId=57188864047">Scopus</a>.</div>
 {% endif %}
 {% include base_path %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "@id": "{{ site.url }}{{ site.baseurl }}/publications/#publication-list",
+  "name": "Publications by Ahmad Bazzi",
+  "description": "Complete list of peer-reviewed journal articles, conference papers, and a doctoral thesis by Ahmad Bazzi (ORCID 0000-0002-7645-352X).",
+  "url": "{{ site.url }}{{ site.baseurl }}/publications/",
+  "author": { "@id": "{{ site.url }}{{ site.baseurl }}/#person" },
+  "numberOfItems": {{ site.publications.size }},
+  "itemListOrder": "https://schema.org/ItemListOrderDescending",
+  "itemListElement": [
+    {%- assign pubs = site.publications | sort: 'date' | reverse %}
+    {%- for p in pubs %}
+    {
+      "@type": "ListItem",
+      "position": {{ forloop.index }},
+      "url": "{{ site.url }}{{ site.baseurl }}{{ p.url }}",
+      "name": {{ p.title | strip_html | jsonify }}{% if p.date %},
+      "item": {
+        "@type": "ScholarlyArticle",
+        "headline": {{ p.title | strip_html | jsonify }},
+        "url": "{{ site.url }}{{ site.baseurl }}{{ p.url }}",
+        "datePublished": "{{ p.date | date_to_xmlschema }}"{% if p.venue %},
+        "isPartOf": { "@type": "Periodical", "name": {{ p.venue | jsonify }} }{% endif %}{% if p.doi %},
+        "sameAs": "https://doi.org/{{ p.doi }}"{% endif %}
+      }{% endif %}
+    }{% unless forloop.last %},{% endunless %}
+    {%- endfor %}
+  ]
+}
+</script>
 
 ## Journals
 * D. Wang, **A. Bazzi**\*, M. Chafii. " DRIP: A Versatile Family of Space-Time ISAC Discrete-time Sequences." in *IEEE Journal on Selected Areas in Information Theory*, 2026. [[arXiv]](https://arxiv.org/pdf/2410.12746)

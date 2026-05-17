@@ -16,45 +16,14 @@ His research interests include signal processing, wireless communications, artif
 
 
 
-<!-- Example: editing a markdown file for a talk
-![Editing a markdown file for a talk](/images/editing-talk.png)
-I am taking students to be co-advised with faculty members.
-
 # News
-* <b>CVL</b> is accepted to CoRL 2023 as a poster <a href="https://openreview.net/forum?id=oqOfLP6bJy">[Paper]</a>.
-* <b>Accelerating exploration and representation learning with offline pre-training</b> is accepted to ICML 2023 as a workshop poster <a href="https://arxiv.org/abs/2304.00046">[Paper]</a>.
-* <b>Learning About Progress From Experts</b> is accepted to ICLR 2023 as a spotlight (top 25%) <a href="https://openreview.net/pdf?id=sKc6fgce1zs">[Paper]</a>.
-* I started at the MLR team at Apple as a Research Scientist.
-* <b>CVL</b> is accepted to NeurIPS 2022 Deep RL workshop <a href="https://arxiv.org/abs/2211.02100">[Paper]</a>.
-* <b>GSF</b> is accepted to NeurIPS 2022 as a poster <a href="https://arxiv.org/abs/2111.14629">[Paper]</a>.
-* <b>Low-Rank Representation of Reinforcement Learning Policies</b> is accepted to JAIR <a href="https://arxiv.org/abs/2002.02863">[Paper]</a>.
-* <b>Sequential Density Estimation via Nonlinear Continuous Weighted Finite Automata</b> is accepted to LearnAut 2022 <a href="/files/learnaut_2022_Sequential_Density_Estimation_via_Nonlinear_Continuous_Weighted_Finite_Automata.pdf">[Paper]</a>.
-* <b>Short-Horizon Policy Iteration</b> (jointly with Microsoft Research) is accepted to ECML-PKDD 2022. <a href="https://arxiv.org/abs/2106.00589">[Paper]</a>.
-* Our generalization quantification toolbox (jointly with Microsoft Research) is out. <a href="https://github.com/microsoft/segar">[Link]</a>.
-* <b>CTRL</b> is accepted to ICLR 2022 as poster. <a href="https://arxiv.org/abs/2106.02193">[Paper]</a>.
-* I am teaching the <i>COMP 424: Artificial Intelligence</i> class at McGill University during the Winter 2022 term. <a href="https://www.mcgill.ca/study/2021-2022/courses/comp-424">[Link]</a>. 
-* <b>GSF</b> is accepted to NeurIPS 2021 Offline RL workshop as poster. <a href="https://arxiv.org/abs/2111.14629">[Paper]</a>.
-* I am teaching the <i>BINF 7105: Méthodes statistiques en bioinformatique</i> class at UQAM University during the Fall 2021 term. <a href="http://info.uqam.ca/plan_cours/Automne%202021/BIF7105.html">[Link]</a>. 
-* Our COVID-19 phylogenetic analysis is accepted to <i>BMC Ecology and Evolution<i>. <a href="https://link.springer.com/article/10.1186/s12862-020-01732-2">[Paper]</a>.
-* <b>NTK-CL</b> is accepted to AISTATS 2021 as a poster. <a href="https://proceedings.mlr.press/v130/doan21a.html">[Paper]</a><a href="https://www.youtube.com/watch?v=iUlOxliPqfE">[Talk]</a>.
-* <b>DRIML</b> is accepted to NeurIPS 2020 as poster. <a href="https://arxiv.org/abs/2006.07217">[Paper]</a> <a href="https://bmazoure.github.io/posts/deep-rl-infomax-learning/">[Blog]</a> <a href="/files/driml/DRIML_poster_(NeurIPS2020).pdf">[Poster]</a>.
-* <b>UQF</b> is accepted to AISTATS 2020 as a poster. <a href="https://proceedings.mlr.press/v108/li20h.html">[Paper]</a><a href="https://aistats2020.org/poster_922.html">[Poster]</a>.
 
-
-# About me
-
-I am currently a Research Scientist at the Machine Learning Research team at Apple, working with Josh Susskind, Walter Talbott and Devon Hjelm on fundamental problems of representation learning for sequential decision making tasks.
-
-I recently defended my PhD at the Montreal Institute for Learning Algorithms (MILA) and McGill University, co-supervised by [Devon Hjelm](https://scholar.google.ca/citations?user=68c5HfwAAAAJ&hl=en) and [Doina Precup](https://scholar.google.ca/citations?user=j54VcVEAAAAJ&hl=en). My research interests include deep reinforcement learning, probabilistic modeling, variational inference and representation learning.
-
-I also was a research intern at DeepMind, working with Ankit Anand, Jake Bruce and Rob Fergus on unsupervised pre-training of state representations for efficient RL finetuning.
-
-In the summer of 2021, I was interning in the Robotics team at Google Brain, with [Jonathan Tompson](https://jonathantompson.github.io/) and [Ofir Nachum](https://research.google/people/105364/), working on using self-supervised learning to improve generalization capabilities of offline RL agents.
-I was a research intern at Microsoft Research, New York in the reinforcement learning team during summer 2020, working on counterfactual evaluation in contextual bandits. Previously, I was a research intern at Microsoft Research Montreal in the reinforcement learning team during summer 2019. I was also a research intern at Nuance during the summer of 2018 where I collaborated with [Atta Norouzian](https://scholar.google.ca/citations?user=KRPMXqYAAAAJ&hl=en). My work there focused on modeling acoustic signals such as speech with deep neural architectures.
-
-I have completed my Master's in Statistics at McGill University under the supervision of [Johanna Neslehova](http://www.math.mcgill.ca/neslehova/). My thesis focused on reconstructing graphical models from discrete data with variational inference and multiarmed bandits. It can be found here: [link](https://bmazoure.github.io/files/thesis_Msc_2018.pdf). Before that, I obtained a Bachelor's in Computer Science and Statistics in 2017 from McGill University.
-
--->
+* **May 2026** &mdash; Invited talk *"Recent Advances on Integrated Sensing and Communications for 6G"* at the IEEE ComSoc SPCC Technical Committee. [[talk page]](/talks/spcc-26)
+* **2026** &mdash; Serving as Editor for *IEEE Communications Letters (COMML)* and *IEEE Open Journal of the Communications Society (OJ-COMS)* (2025&ndash;2026); Guest Editor for *IEEE Communications Standards Magazine* (2026&ndash;2027) and *IEEE Journal of Selected Topics in Signal Processing* (2026&ndash;2027).
+* **2026** &mdash; *"Upper Mid-Band Spectrum for 6G: Vision, Opportunity and Challenges"* published in *IEEE Communications Magazine*. [[paper]](/publication/upper-mid-band-spectrum-6g-2025)
+* **2025** &mdash; *"High-Resolution Sensing in Communication-Centric ISAC"* accepted in *IEEE JSAC*. [[paper]](/publication/high-resolution-sensing-cisac-jsac25)
+* **2025** &mdash; Three GLOBECOM 2025 papers accepted: secure full-duplex ISAC, hybrid radar fusion with quantization, and 3GPP-compliant RCS characterization of indoor factory targets.
+* **2025** &mdash; Named *Exemplary Reviewer* at the *IEEE Open Journal of the Communications Society*.
 
 # Research interests
 

@@ -14,6 +14,31 @@ layout: default
   {% endunless %}
 {% endif %}
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "@id": "{{ page.url | prepend: site.baseurl | prepend: site.url }}#event",
+  "name": {{ page.title | strip_html | jsonify }},
+  "description": {{ page.excerpt | default: page.title | strip_html | strip_newlines | jsonify }},
+  {% if page.date %}"startDate": "{{ page.date | date_to_xmlschema }}",
+  "endDate": "{{ page.date | date_to_xmlschema }}",{% endif %}
+  "url": "{{ page.url | prepend: site.baseurl | prepend: site.url }}",
+  "eventAttendanceMode": "{% if page.location contains 'Virtual' or page.location contains 'Online' %}https://schema.org/OnlineEventAttendanceMode{% else %}https://schema.org/OfflineEventAttendanceMode{% endif %}",
+  "eventStatus": "https://schema.org/EventScheduled",
+  {% if page.venue %}"location": {
+    {% if page.location contains 'Virtual' or page.location contains 'Online' %}"@type": "VirtualLocation",
+    "url": "{{ page.url | prepend: site.baseurl | prepend: site.url }}",
+    "name": {{ page.venue | jsonify }}{% else %}"@type": "Place",
+    "name": {{ page.venue | jsonify }}{% if page.location %},
+    "address": {{ page.location | jsonify }}{% endif %}{% endif %}
+  },{% endif %}
+  "organizer": { "@type": "Organization", "name": {{ page.venue | default: 'IEEE' | jsonify }} },
+  "performer": { "@id": "{{ site.url }}{{ site.baseurl }}/#person" },
+  "about": { "@id": "{{ site.url }}{{ site.baseurl }}/#person" }
+}
+</script>
+
 <div id="main" role="main">
   {% include sidebar.html %}
 

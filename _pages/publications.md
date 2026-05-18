@@ -45,8 +45,8 @@ description: "Peer-reviewed publications by Ahmad Bazzi: integrated sensing and 
 </script>
 
 ## Journals
-* D. Wang, **A. Bazzi**\*, M. Chafii. " DRIP: A Versatile Family of Space-Time ISAC Discrete-time Sequences." in *IEEE Journal on Selected Areas in Information Theory*, 2026. [[arXiv]](https://arxiv.org/pdf/2410.12746)
-* **A. Bazzi**\*, F. Gast, F. Liu, S. Jin, G. Fettweis, M. Chafii " DRIP: A Versatile Family of Space-Time ISAC Discrete-time Sequences." in *IEEE Communications Magazine*, 2026.
+* D. Wang, **A. Bazzi**\*, M. Chafii. "DRIP: A Versatile Family of Space-Time ISAC Discrete-time Sequences." in *IEEE Journal on Selected Areas in Information Theory*, 2026. [[arXiv]](https://arxiv.org/pdf/2410.12746)
+* **A. Bazzi**\*, F. Gast, F. Liu, S. Jin, G. Fettweis, M. Chafii "From Coverage to Sensing: ISAC meets FR3", in *IEEE Communications Magazine*, 2026.
 * E. Illi, **A. Bazzi**, M. Qaraqe, and A. Ghrayeb. "On the Secrecy-Sensing Optimization of RIS-assisted Full-Duplex Integrated Sensing and Communication Network." in *IEEE Transactions on Wireless Communications*, vol. 25, pp. 9530-9547, 2026, doi: 10.1109/TWC.2025.3645048. [[arXiv]](https://arxiv.org/pdf/2504.20912) [[paper]](https://ieeexplore.ieee.org/document/11313766)
 * **A. Bazzi**\*, R. Bomfin, M. Mezzavilla, S. Rangan, T. S. Rappaport and M. Chafii,  "Upper mid-band spectrum for 6G: Vision, opportunity and challenges," in *IEEE Communications Magazine*, vol. 64, no. 1, pp. 206-212, January 2026, doi: 10.1109/MCOM.001.2500101. [[paper]](https://ieeexplore.ieee.org/document/11297179)[[arXiv]](https://arxiv.org/pdf/2502.17914)
 * S. Naoumi, **A. Bazzi**\*, R. Bomfin and M. Chafii "High-Resolution Sensing in Communication-Centric ISAC: Deep Learning and Parametric Methods," in *IEEE Journal on Selected Areas in Communications*, doi: 10.1109/JSAC.2025.3639350. [[paper]](https://ieeexplore.ieee.org/document/11272093)[[arXiv]](https://arxiv.org/abs/2509.02137)

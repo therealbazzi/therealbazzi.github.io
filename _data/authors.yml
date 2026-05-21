@@ -1,18 +1,19 @@
-# Authors
+# Authors data file.
+# The primary site author is configured in _config.yml under the `author:` key
+# and is the default for all posts and pages. Additional contributing authors
+# can be added here and referenced via the `author:` front-matter, e.g.
+# `author: ahmad-bazzi`.
 
-Name Name:
-  name        : "Name Name"
-  uri         : "http://name.com"
-  email       : "name@name.com"
-  bio         : "This is the first name."
-  avatar      : "bio-photo-2.jpg"
-  twitter     : "name"
-  google_plus : "Name"
-
-Name2 Name2:
-  name        : "Name2 Name2"
-  email       : "name2@name2.com"
-  bio         : "I ordered what?"
-  avatar      : "bio-photo.jpg"
-  twitter     : "name2"
-  google_plus : "Name"
+ahmad-bazzi:
+  name          : "Ahmad Bazzi"
+  uri           : "https://therealbazzi.github.io/"
+  email         : "bazzi.ahmad@hotmail.com"
+  bio           : "Research Scientist at NYU Abu Dhabi. Integrated sensing and communication (ISAC), signal processing, wireless communications."
+  avatar        : "profile.png"
+  orcid         : "https://orcid.org/0000-0002-7645-352X"
+  googlescholar : "https://scholar.google.com/citations?hl=en&user=9HWunwcAAAAJ"
+  github        : "therealbazzi"
+  linkedin      : "drahmadbazzi/"
+  twitter       : "drahmadbazzi"
+  youtube       : "UCgC1d4JZ1Fz4t8MWLJD464w"
+  dblp          : "62/10116"

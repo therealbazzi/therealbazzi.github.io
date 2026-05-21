@@ -123,7 +123,38 @@ JSON-LD structured data.
     "MIMO",
     "Deep Learning for Communications",
     "Array Processing",
-    "Direction-of-Arrival Estimation"
+    "Direction-of-Arrival Estimation",
+    "Reconfigurable Intelligent Surfaces",
+    "Joint Communication and Radar",
+    "6G",
+    "Optimization Theory",
+    "Statistical Estimation"
+  ],
+  "hasOccupation": [
+    {
+      "@type": "Occupation",
+      "name": "Research Scientist",
+      "occupationLocation": { "@type": "CollegeOrUniversity", "name": "New York University Abu Dhabi" }
+    },
+    {
+      "@type": "Occupation",
+      "name": "Editor, IEEE Communications Letters",
+      "occupationLocation": { "@type": "Organization", "name": "IEEE Communications Society" }
+    },
+    {
+      "@type": "Occupation",
+      "name": "Editor, IEEE Open Journal of the Communications Society",
+      "occupationLocation": { "@type": "Organization", "name": "IEEE Communications Society" }
+    },
+    {
+      "@type": "Occupation",
+      "name": "Educational YouTube Creator",
+      "occupationLocation": { "@type": "VirtualLocation", "name": "YouTube channel @AhmadBazzi (270k+ subscribers)" }
+    }
+  ],
+  "memberOf": [
+    { "@type": "Organization", "name": "IEEE", "url": "https://www.ieee.org/", "description": "Senior Member" },
+    { "@type": "Organization", "name": "Sigma Xi (ΣΞ), The Scientific Research Honor Society", "description": "Full member" }
   ]
 }
 </script>
@@ -136,7 +167,55 @@ JSON-LD structured data.
   "name": "{{ site.title }}",
   "description": "{{ site.description }}",
   "author": { "@id": "{{ site.url }}{{ site.baseurl }}/#person" },
-  "inLanguage": "{{ site.locale | default: 'en-US' }}"
+  "publisher": { "@id": "{{ site.url }}{{ site.baseurl }}/#person" },
+  "inLanguage": "{{ site.locale | default: 'en-US' }}",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://www.google.com/search?q=site%3Atherealbazzi.github.io+{search_term_string}"
+    },
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": "{{ site.url }}{{ site.baseurl }}/#faq",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Who is Ahmad Bazzi?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Ahmad Bazzi is a Research Scientist at the Wireless Research Lab of New York University (NYU) Abu Dhabi and NYU WIRELESS, NYU Tandon School of Engineering. He received his PhD in Electrical Engineering from EURECOM in 2017. He is a Senior Member of the IEEE and serves as Editor for IEEE COMML and IEEE OJ-COMS." }
+    },
+    {
+      "@type": "Question",
+      "name": "What is Ahmad Bazzi's research about?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Ahmad Bazzi's research focuses on integrated sensing and communication (ISAC), signal processing, wireless communications, MIMO, reconfigurable intelligent surfaces (RIS), waveform design, and deep learning for next-generation 6G wireless networks." }
+    },
+    {
+      "@type": "Question",
+      "name": "What is Ahmad Bazzi's ORCID?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Ahmad Bazzi's ORCID is 0000-0002-7645-352X. His other identifiers are Google Scholar ID 9HWunwcAAAAJ, DBLP 62/10116, Scopus 57188864047, Semantic Scholar 2344210, and Wikidata Q120967938." }
+    },
+    {
+      "@type": "Question",
+      "name": "Where does Ahmad Bazzi work?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Ahmad Bazzi works at New York University Abu Dhabi (NYU Abu Dhabi), and is affiliated with NYU WIRELESS at NYU Tandon School of Engineering, Brooklyn, NY." }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I cite Ahmad Bazzi's work?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Each publication page on therealbazzi.github.io includes a recommended citation, a copy-to-clipboard BibTeX block, and machine-readable Highwire Press, Dublin Core, and schema.org ScholarlyArticle metadata. See the AI citation policy at https://therealbazzi.github.io/ai-citation-policy/ for preferred attribution." }
+    },
+    {
+      "@type": "Question",
+      "name": "What is Ahmad Bazzi's YouTube channel?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Ahmad Bazzi runs an educational YouTube channel with over 270,000 subscribers and 17 million views, covering convex optimization, signal processing, and applied mathematics at https://www.youtube.com/channel/UCgC1d4JZ1Fz4t8MWLJD464w." }
+    }
+  ]
 }
 </script>
 {%- endif -%}
@@ -195,7 +274,17 @@ JSON-LD structured data.
     "name": "{{ page.publisher | default: 'IEEE' }}"
   },
   "isAccessibleForFree": true,
-  "creator": { "@id": "{{ site.url }}{{ site.baseurl }}/#person" }
+  "creator": { "@id": "{{ site.url }}{{ site.baseurl }}/#person" }{% if page.code %},
+  "codeRepository": "{{ page.code }}",
+  "workExample": {
+    "@type": "SoftwareSourceCode",
+    "codeRepository": "{{ page.code }}",
+    "programmingLanguage": ["Python", "MATLAB"],
+    "runtimePlatform": "Jupyter / MATLAB",
+    "license": "https://opensource.org/licenses/MIT",
+    "author": { "@id": "{{ site.url }}{{ site.baseurl }}/#person" },
+    "about": {{ page.title | strip_html | jsonify }}
+  }{% endif %}
 }
 </script>
 {%- endif -%}

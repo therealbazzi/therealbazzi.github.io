@@ -5,6 +5,21 @@
 {% include seo.html %}
 {% include citation-meta.html %}
 {% include jsonld.html %}
+{% include breadcrumbs-jsonld.html %}
+
+<!-- IndieWeb rel=me identity verification -->
+<link rel="me" href="{{ site.author.orcid }}">
+<link rel="me" href="{{ site.author.googlescholar }}">
+<link rel="me" href="https://github.com/{{ site.author.github }}">
+<link rel="me" href="https://www.linkedin.com/in/{{ site.author.linkedin }}">
+<link rel="me" href="https://x.com/{{ site.author.twitter }}">
+<link rel="me" href="https://www.youtube.com/channel/{{ site.author.youtube }}">
+<link rel="me" href="https://www.wikidata.org/wiki/Q120967938">
+<link rel="me" href="mailto:{{ site.author.email }}">
+
+<!-- Author / human-readable links for AI crawlers -->
+<link rel="author" href="{{ site.url }}{{ site.baseurl }}/">
+<link rel="canonical-author" href="{{ site.author.orcid }}">
 
 <link href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ base_path }}/feed.xml{% endif %}" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
 

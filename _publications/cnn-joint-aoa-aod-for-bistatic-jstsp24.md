@@ -13,6 +13,7 @@ authors:
   - "Marwa Chafii"
 arxiv_id: "2404.00582"
 paperurl: 'https://arxiv.org/pdf/2404.00582.pdf'
+code: "https://github.com/salmane-s9/Bistatic_ISAC"
 keywords:
   - "Integrated Sensing and Communication"
   - "ISAC"

@@ -3,7 +3,38 @@ layout: archive
 title: "Talks and presentations"
 permalink: /talks/
 author_profile: true
+description: "Invited talks, conference presentations, and tutorials by Ahmad Bazzi on integrated sensing and communication (ISAC), signal processing, and wireless communications."
 ---
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "@id": "{{ site.url }}{{ site.baseurl }}/talks/#collection",
+  "name": "Talks and Presentations - Ahmad Bazzi",
+  "description": "Invited talks, conference presentations, and tutorials given by Ahmad Bazzi.",
+  "url": "{{ site.url }}{{ site.baseurl }}/talks/",
+  "author": { "@id": "{{ site.url }}{{ site.baseurl }}/#person" },
+  "numberOfItems": {{ site.talks.size }},
+  "hasPart": [
+    {%- assign talks_sorted = site.talks | sort: 'date' | reverse %}
+    {%- for t in talks_sorted %}
+    {
+      "@type": "Event",
+      "name": {{ t.title | strip_html | jsonify }},
+      "url": "{{ site.url }}{{ site.baseurl }}{{ t.url }}"{% if t.date %},
+      "startDate": "{{ t.date | date_to_xmlschema }}"{% endif %}{% if t.venue %},
+      "organizer": { "@type": "Organization", "name": {{ t.venue | jsonify }} }{% endif %}{% if t.location %},
+      "location": {
+        "@type": "{% if t.location contains 'Virtual' or t.location contains 'Online' %}VirtualLocation{% else %}Place{% endif %}",
+        "name": {{ t.location | jsonify }}
+      }{% endif %},
+      "performer": { "@id": "{{ site.url }}{{ site.baseurl }}/#person" }
+    }{% unless forloop.last %},{% endunless %}
+    {%- endfor %}
+  ]
+}
+</script>
 
 {% if site.talkmap_link == true %}
 

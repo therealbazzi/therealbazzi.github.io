@@ -53,10 +53,10 @@ description: "How we used mutual information as a unifying currency — bits —
 
 In an Integrated Sensing and Communication (ISAC) system, one antenna array does two jobs: it talks to communication users *and* listens for targets. That sounds elegant. In practice it's a design headache, because the *signals* the system sends out are being asked to serve two very different purposes simultaneously:
 
-- For **communication**, the pilot symbols \(\boldsymbol{\Phi}\) at the start of a frame let downlink users estimate the channel \(\boldsymbol{h}_k\) so they can equalize and decode the data that follows.
+- For **communication**, the pilot symbols \\(\boldsymbol{\Phi}\\) at the start of a frame let downlink users estimate the channel \\(\boldsymbol{h}_k\\) so they can equalize and decode the data that follows.
 - For **sensing**, the *same* pilots reflect off targets and clutter, and the ISAC base station listens to the backscatter to detect what's out there.
 
-These two tasks pull in opposite directions. A pilot that minimizes channel-estimation variance for \(K\) users is not generally the same pilot that maximizes detection probability against a target at angle \(\theta_0\) surrounded by clutter at angles \(\theta_1, \ldots, \theta_Q\). Conventional wisdom said you had to pick one or build separate signals for each — wasting either time, spectrum, or hardware.
+These two tasks pull in opposite directions. A pilot that minimizes channel-estimation variance for \\(K\\) users is not generally the same pilot that maximizes detection probability against a target at angle \\(\theta_0\\) surrounded by clutter at angles \\(\theta_1, \ldots, \theta_Q\\). Conventional wisdom said you had to pick one or build separate signals for each — wasting either time, spectrum, or hardware.
 
 We wanted a principled way to *jointly* design that pilot. The catch: the two performance measures usually live in different units. Detection performance is a probability; channel estimation is measured in mean-squared error or capacity. How do you compare them, let alone optimize them together?
 
@@ -64,21 +64,21 @@ We wanted a principled way to *jointly* design that pilot. The catch: the two pe
 
 Our answer is to express both halves of the ISAC objective in the same currency — **mutual information (MI)** — and then optimize over both at once.
 
-For the \(k\)-th communication user receiving \(\boldsymbol{y}_k = \boldsymbol{\Phi} \boldsymbol{h}_k + \boldsymbol{n}_k\), we define the communication MI between the received signal and the channel as
+For the \\(k\\)-th communication user receiving \\(\boldsymbol{y}_k = \boldsymbol{\Phi} \boldsymbol{h}_k + \boldsymbol{n}_k\\), we define the communication MI between the received signal and the channel as
 
 $$
 \mathcal{M}^{\text{comm}}_k(\boldsymbol{\Phi}) \;\triangleq\; I(\boldsymbol{y}_k; \boldsymbol{h}_k).
 $$
 
-Under a Gaussian-mixture model for the channel (a flexible-enough model to approximate any continuous channel distribution including Rician, Rayleigh, Nakagami), this gives a closed-form expression that depends explicitly on \(\boldsymbol{\Phi}\) — meaning we can take its gradient and optimize. **Theorem 2** in the paper shows that maximizing \(\mathcal{M}^{\text{comm}}_k\) directly lowers the variance of channel estimation, which in turn improves the worst-case channel capacity. So this isn't an arbitrary surrogate — it's tied back to a quantity practitioners already care about.
+Under a Gaussian-mixture model for the channel (a flexible-enough model to approximate any continuous channel distribution including Rician, Rayleigh, Nakagami), this gives a closed-form expression that depends explicitly on \\(\boldsymbol{\Phi}\\) — meaning we can take its gradient and optimize. **Theorem 2** in the paper shows that maximizing \\(\mathcal{M}^{\text{comm}}_k\\) directly lowers the variance of channel estimation, which in turn improves the worst-case channel capacity. So this isn't an arbitrary surrogate — it's tied back to a quantity practitioners already care about.
 
-For sensing, we set up the standard two-hypothesis test: under \(\mathcal{H}_0\) no target is present (only clutter \(\boldsymbol{c}\) and noise), under \(\mathcal{H}_1\) the target signature \(\boldsymbol{d}\) is also present. The sensing MI is
+For sensing, we set up the standard two-hypothesis test: under \\(\mathcal{H}_0\\) no target is present (only clutter \\(\boldsymbol{c}\\) and noise), under \\(\mathcal{H}_1\\) the target signature \\(\boldsymbol{d}\\) is also present. The sensing MI is
 
 $$
 \mathcal{M}^{\text{sense}}(\boldsymbol{\Phi}) \;\triangleq\; I(\boldsymbol{Y}_r; \boldsymbol{\Theta}, \boldsymbol{\nu} \mid \boldsymbol{\Phi}),
 $$
 
-which simplifies to a log-determinant expression involving the *target-to-clutter-plus-noise* covariance structure. The key payoff is **Theorem 3**: in the large-array asymptotic regime, \(\mathcal{M}^{\text{sense}}\) relates one-to-one to the probability of detection \(P_D\) of the most powerful (Neyman–Pearson) test at a fixed false-alarm rate:
+which simplifies to a log-determinant expression involving the *target-to-clutter-plus-noise* covariance structure. The key payoff is **Theorem 3**: in the large-array asymptotic regime, \\(\mathcal{M}^{\text{sense}}\\) relates one-to-one to the probability of detection \\(P_D\\) of the most powerful (Neyman–Pearson) test at a fixed false-alarm rate:
 
 $$
 \lim_{L\to\infty} \left(-\frac{1}{L} \log(1 - P_D)\right) \;=\; \mathcal{M}^{\text{sense}}(\boldsymbol{\Phi}) - g(\boldsymbol{\nu}, \boldsymbol{\Phi}).
@@ -90,23 +90,23 @@ So both halves of the problem can be expressed in bits, and both bits-quantities
 
 ## The optimization: one pilot, many objectives
 
-With \(K\) communication users plus the sensing channel, we have \(K + 1\) MI objectives competing over the same pilot matrix \(\boldsymbol{\Phi}\). That's a **multi-objective optimization problem (MOOP)**:
+With \\(K\\) communication users plus the sensing channel, we have \\(K + 1\\) MI objectives competing over the same pilot matrix \\(\boldsymbol{\Phi}\\). That's a **multi-objective optimization problem (MOOP)**:
 
 $$
 (\mathcal{P}_{\text{MOOP}}): \quad \max_{\boldsymbol{\Phi}}\; \left[\mathcal{M}^{\text{comm}}_1(\boldsymbol{\Phi}), \ldots, \mathcal{M}^{\text{comm}}_K(\boldsymbol{\Phi}), \mathcal{M}^{\text{sense}}(\boldsymbol{\Phi})\right]
 $$
 
-subject to the **orthogonality constraint** \(\boldsymbol{\Phi} \boldsymbol{\Phi}^H = \frac{P}{L} \mathbf{I}\) — which is desirable because orthogonal pilots eliminate inter-user inter-cell interference during training, and make least-squares channel estimators trivial (no matrix inversion needed). The constraint also fixes the power budget.
+subject to the **orthogonality constraint** \\(\boldsymbol{\Phi} \boldsymbol{\Phi}^H = \frac{P}{L} \mathbf{I}\\) — which is desirable because orthogonal pilots eliminate inter-user inter-cell interference during training, and make least-squares channel estimators trivial (no matrix inversion needed). The constraint also fixes the power budget.
 
-There's no global optimum here — improving one user's MI can hurt another's, or hurt the sensing MI, so optimal solutions live on a Pareto frontier rather than at a single point. We **scalarize** the MOOP with a single design parameter \(\rho \in [0, 1]\):
+There's no global optimum here — improving one user's MI can hurt another's, or hurt the sensing MI, so optimal solutions live on a Pareto frontier rather than at a single point. We **scalarize** the MOOP with a single design parameter \\(\rho \in [0, 1]\\):
 
 $$
 (\mathcal{P}_s): \quad \max_{\boldsymbol{\Phi}}\; \rho\, \mathcal{M}^{\text{comm}}(\boldsymbol{\Phi}) + (1 - \rho)\, \mathcal{M}^{\text{sense}}(\boldsymbol{\Phi}), \quad \text{s.t.}\; \boldsymbol{\Phi}\boldsymbol{\Phi}^H = \mathbf{I}.
 $$
 
-Set \(\rho = 1\) and you get the pilot that's optimal for channel estimation alone; set \(\rho = 0\) and you get the pilot that's optimal for target detection alone; anywhere in between you trade off the two. **\(\rho\) is the dial.**
+Set \\(\rho = 1\\) and you get the pilot that's optimal for channel estimation alone; set \\(\rho = 0\\) and you get the pilot that's optimal for target detection alone; anywhere in between you trade off the two. **\\(\rho\\) is the dial.**
 
-The remaining issue is that the orthogonality constraint defines the **Stiefel manifold** \(\text{St}(L, N_t)\) — the set of \(L \times N_t\) complex matrices with orthonormal rows — which is non-convex. The objective is non-convex too. So we solve \((\mathcal{P}_s)\) with **projected gradient descent on the Stiefel manifold**:
+The remaining issue is that the orthogonality constraint defines the **Stiefel manifold** \\(\text{St}(L, N_t)\\) — the set of \\(L \times N_t\\) complex matrices with orthonormal rows — which is non-convex. The objective is non-convex too. So we solve \\((\mathcal{P}_s)\\) with **projected gradient descent on the Stiefel manifold**:
 
 $$
 \begin{aligned}
@@ -115,17 +115,17 @@ $$
 \end{aligned}
 $$
 
-where \(\boldsymbol{\pi}(\boldsymbol{Y}) = \boldsymbol{U} \boldsymbol{I}_{L, N_t} \boldsymbol{V}^H\) is the projection onto the Stiefel manifold via singular value decomposition. By construction, every iterate is orthogonal — we never leave the feasible set. We derive the closed-form expressions for both \(\nabla \mathcal{M}^{\text{comm}}\) and \(\nabla \mathcal{M}^{\text{sense}}\) (appendices C and D of the paper), and prove via **Theorem 1** that this iteration converges to a stable orthogonal pilot under restricted strong smoothness and convexity assumptions:
+where \\(\boldsymbol{\pi}(\boldsymbol{Y}) = \boldsymbol{U} \boldsymbol{I}_{L, N_t} \boldsymbol{V}^H\\) is the projection onto the Stiefel manifold via singular value decomposition. By construction, every iterate is orthogonal — we never leave the feasible set. We derive the closed-form expressions for both \\(\nabla \mathcal{M}^{\text{comm}}\\) and \\(\nabla \mathcal{M}^{\text{sense}}\\) (appendices C and D of the paper), and prove via **Theorem 1** that this iteration converges to a stable orthogonal pilot under restricted strong smoothness and convexity assumptions:
 
 $$
 \mathcal{M}^{\text{ISAC}}(\boldsymbol{\Phi}^{\text{opt}}) - \mathcal{M}^{\text{ISAC}}(\boldsymbol{\Phi}_\infty) \;\leq\; \frac{\alpha + \beta}{1 - \frac{\beta}{\alpha}} \epsilon^2.
 $$
 
-That bound says: with enough iterations, we land within a precision controlled by \(\epsilon\) of the local maximizer. The simulations show convergence in roughly 50–200 iterations for reasonable step sizes.
+That bound says: with enough iterations, we land within a precision controlled by \\(\epsilon\\) of the local maximizer. The simulations show convergence in roughly 50–200 iterations for reasonable step sizes.
 
 ## The surprise: information overlap
 
-The most interesting empirical finding isn't an algorithm but a phenomenon. We plot the achievable \((\mathcal{M}^{\text{sense}}, \mathcal{M}^{\text{comm}})\) frontier for different target locations. As the target's angle of arrival \(\theta_0\) moves *closer* to the mean angle of arrival of the communication user, the entire Pareto frontier **pushes outward toward the utopia point**:
+The most interesting empirical finding isn't an algorithm but a phenomenon. We plot the achievable \\((\mathcal{M}^{\text{sense}}, \mathcal{M}^{\text{comm}})\\) frontier for different target locations. As the target's angle of arrival \\(\theta_0\\) moves *closer* to the mean angle of arrival of the communication user, the entire Pareto frontier **pushes outward toward the utopia point**:
 
 > Both sensing MI and communication MI improve *simultaneously*. There is no trade-off in this regime — only joint gain.
 
@@ -137,9 +137,9 @@ This has a clear deployment implication: in scenarios where the BS senses its ow
 
 Some of the headline gains, from the simulation section:
 
-- **NMSE** of channel estimation: ~**6 dB SNR gain** at \(\rho = 1\) (communication-optimal pilot) compared to a generic non-optimized orthogonal pilot.
-- **Symbol Error Rate** (multi-user, \(K=4\), 64-QAM with Gray encoding): up to **1.6 dB SNR gain** at SER = \(10^{-4}\).
-- **Detection probability** at false-alarm rate \(P_{\text{fa}} = 10^{-4}\), single-user scenario: even the communication-optimal pilot (\(\rho = 1\)) achieves \(P_D = 0.61\), against \(P_D = 0.475\) for a non-optimized orthogonal pilot. Lower \(\rho\) pushes detection further — \(P_D = 0.7\) at \(\rho = 0\).
+- **NMSE** of channel estimation: ~**6 dB SNR gain** at \\(\rho = 1\\) (communication-optimal pilot) compared to a generic non-optimized orthogonal pilot.
+- **Symbol Error Rate** (multi-user, \\(K=4\\), 64-QAM with Gray encoding): up to **1.6 dB SNR gain** at SER = \\(10^{-4}\\).
+- **Detection probability** at false-alarm rate \\(P_{\text{fa}} = 10^{-4}\\), single-user scenario: even the communication-optimal pilot (\\(\rho = 1\\)) achieves \\(P_D = 0.61\\), against \\(P_D = 0.475\\) for a non-optimized orthogonal pilot. Lower \\(\rho\\) pushes detection further — \\(P_D = 0.7\\) at \\(\rho = 0\\).
 
 So one orthogonal pilot, designed by this method, gives both better channel estimation than a DFT or eigen-based pilot *and* better detection than a random orthogonal pilot. You get to keep the orthogonality (low-complexity decoders, no inter-stream interference) and pick up gains in both regimes.
 

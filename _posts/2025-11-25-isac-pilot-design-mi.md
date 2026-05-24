@@ -330,18 +330,6 @@ The framework optimizes for MI and orthogonality. It does *not* yet account for:
 - **Multi-target detection** in a single pilot transmission. Current work scans directions in a TDM fashion.
 
 Future directions we're working on include learning-based pilot generation (where deep models propose pilots that satisfy these additional constraints) and PAPR-aware orthogonal pilots. The recent work on [ISAC waveforms with adjustable PAPR](/publication/isac-waveforms-tunable-papr-twc23/) and the more general [DRIP family of space-time ISAC sequences](/publication/drip-spacetime-isac-sequences-jsait26/) build directly on the MI framework introduced here.
-<!-- 
-## Companion videos (planned)
-
-A few short explainer clips would pair naturally with this post. Each is 60 to 180 seconds, animatable in Manim or a screen recording with annotations.
-
-1. *"What is mutual information, really?"* (90 s). Two coupled coin flips, build up entropy then conditional entropy, end with the equation \\(I(X;Y) = H(X) - H(X \mid Y)\\) and the visual that MI is the overlap of two information circles. Pivot to "this is the same currency we use for sensing and communication in ISAC".
-2. *"The \\(\rho\\) dial"* (60 s). A literal slider on screen tied to a live Pareto-frontier point that moves as \\(\rho\\) varies from 0 to 1. The pilot matrix heatmap updates alongside. Optimal for showing the trade-off intuitively.
-3. *"Projected gradient on the Stiefel manifold"* (120 s). Animated dot starting off the manifold, a gradient arrow nudging it, the SVD projection snapping it back onto the surface, repeat until convergence. Use a 3D rotating manifold visualization, similar to Fig. 2 of the paper.
-4. *"Information overlap, animated"* (90 s). Start with target far from user; show two Pareto frontiers. Smoothly move the target's angle toward the user's mean angle; frontier slides outward toward utopia. Punchline frame: "when you sense your own users, you get sensing for free."
-5. *"6 dB, 1.6 dB, and what they mean"* (60 s). Visual ladder of SNR ticks; rotate through NMSE plot, SER plot, ROC plot; finish with the headline numbers as captions.
-
-If you record these and post them on the [YouTube channel](https://www.youtube.com/channel/UCgC1d4JZ1Fz4t8MWLJD464w), embed them here under each corresponding section. AI tools that pull video transcripts plus the surrounding blog context get a much richer view of the paper than they would from the PDF alone. -->
 
 ## How to cite
 

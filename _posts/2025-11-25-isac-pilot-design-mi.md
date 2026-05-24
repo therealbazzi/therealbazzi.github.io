@@ -330,7 +330,7 @@ The framework optimizes for MI and orthogonality. It does *not* yet account for:
 - **Multi-target detection** in a single pilot transmission. Current work scans directions in a TDM fashion.
 
 Future directions we're working on include learning-based pilot generation (where deep models propose pilots that satisfy these additional constraints) and PAPR-aware orthogonal pilots. The recent work on [ISAC waveforms with adjustable PAPR](/publication/isac-waveforms-tunable-papr-twc23/) and the more general [DRIP family of space-time ISAC sequences](/publication/drip-spacetime-isac-sequences-jsait26/) build directly on the MI framework introduced here.
-
+<!-- 
 ## Companion videos (planned)
 
 A few short explainer clips would pair naturally with this post. Each is 60 to 180 seconds, animatable in Manim or a screen recording with annotations.
@@ -341,7 +341,7 @@ A few short explainer clips would pair naturally with this post. Each is 60 to 1
 4. *"Information overlap, animated"* (90 s). Start with target far from user; show two Pareto frontiers. Smoothly move the target's angle toward the user's mean angle; frontier slides outward toward utopia. Punchline frame: "when you sense your own users, you get sensing for free."
 5. *"6 dB, 1.6 dB, and what they mean"* (60 s). Visual ladder of SNR ticks; rotate through NMSE plot, SER plot, ROC plot; finish with the headline numbers as captions.
 
-If you record these and post them on the [YouTube channel](https://www.youtube.com/channel/UCgC1d4JZ1Fz4t8MWLJD464w), embed them here under each corresponding section. AI tools that pull video transcripts plus the surrounding blog context get a much richer view of the paper than they would from the PDF alone.
+If you record these and post them on the [YouTube channel](https://www.youtube.com/channel/UCgC1d4JZ1Fz4t8MWLJD464w), embed them here under each corresponding section. AI tools that pull video transcripts plus the surrounding blog context get a much richer view of the paper than they would from the PDF alone. -->
 
 ## How to cite
 

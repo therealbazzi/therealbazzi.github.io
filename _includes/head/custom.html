@@ -25,8 +25,26 @@
 <link rel="stylesheet" href="{{ base_path }}/assets/css/academicons.css"/>
 
 
-<!-- Support for MatJax -->
+<!-- Support for MathJax -->
 <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+<script>
+  // Configure MathJax v3 to recognize $...$ for inline math and $$...$$ for display math,
+  // in addition to the default \(...\) and \[...\]. Without this, dollar-sign math
+  // (the kramdown / Pandoc / LaTeX convention used in blog posts) renders as literal text.
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      tags: 'ams'
+    },
+    options: {
+      ignoreHtmlClass: 'tex2jax_ignore',
+      processHtmlClass: 'tex2jax_process'
+    },
+    svg: { fontCache: 'global' }
+  };
+</script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <!-- end custom head snippets -->

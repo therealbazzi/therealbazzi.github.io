@@ -3,7 +3,57 @@ layout: archive
 title: "Service"
 permalink: /service/
 author_profile: true
+description: "Editorial, reviewer, and TPC service by Ahmad Bazzi for IEEE journals and conferences in wireless communications and signal processing: COMML editor, OJ-COMS editor, IEEE Transactions reviewer, IEEE conference TPC member."
 ---
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "@id": "{{ site.url }}{{ site.baseurl }}/service/#service",
+  "name": "Professional Service - Ahmad Bazzi",
+  "url": "{{ site.url }}{{ site.baseurl }}/service/",
+  "mainEntity": { "@id": "{{ site.url }}{{ site.baseurl }}/#person" },
+  "about": {
+    "@type": "Person",
+    "@id": "{{ site.url }}{{ site.baseurl }}/#person",
+    "hasOccupation": [
+      {
+        "@type": "Role",
+        "roleName": "Editor",
+        "startDate": "2025",
+        "endDate": "2026",
+        "memberOf": { "@type": "Periodical", "name": "IEEE Communications Letters (COMML)", "publisher": { "@type": "Organization", "name": "IEEE Communications Society" } }
+      },
+      {
+        "@type": "Role",
+        "roleName": "Editor",
+        "startDate": "2025",
+        "endDate": "2026",
+        "memberOf": { "@type": "Periodical", "name": "IEEE Open Journal of the Communications Society (OJ-COMS)", "publisher": { "@type": "Organization", "name": "IEEE Communications Society" } }
+      },
+      {
+        "@type": "Role",
+        "roleName": "Guest Editor",
+        "startDate": "2025",
+        "endDate": "2026",
+        "description": "Special Issue: Resilient and Trustworthy Communications for 6G Smart Wireless Environments — Integrating Sensing, AI, and Security",
+        "memberOf": { "@type": "Periodical", "name": "IEEE Open Journal of the Communications Society" }
+      }
+    ],
+    "knowsAbout": [
+      "IEEE Transactions on Wireless Communications",
+      "IEEE Transactions on Communications",
+      "IEEE Transactions on Signal Processing",
+      "IEEE Transactions on Vehicular Technology",
+      "IEEE Transactions on Aerospace and Electronic Systems",
+      "IEEE Wireless Communication Letters",
+      "IEEE Signal Processing Letters",
+      "China Communications"
+    ]
+  }
+}
+</script>
 
 ## Editorial Roles
 * IEEE Communications Letters, 2025-2026

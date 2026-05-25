@@ -1,41 +1,59 @@
+# Ahmad Bazzi — Personal Research Website
 
-# Academic Pages
+**Live site:** [https://therealbazzi.github.io/](https://therealbazzi.github.io/)
 
-![pages-build-deployment](https://github.com/academicpages/academicpages.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)
+This repository hosts the source code for the personal research website of **Ahmad Bazzi** ([ORCID 0000-0002-7645-352X](https://orcid.org/0000-0002-7645-352X)), Research Scientist at the Wireless Research Lab of [New York University (NYU) Abu Dhabi](https://nyuad.nyu.edu/) and [NYU WIRELESS](https://wireless.engineering.nyu.edu/), NYU Tandon School of Engineering. His research focuses on integrated sensing and communication (ISAC), signal processing, wireless communications, MIMO, reconfigurable intelligent surfaces (RIS), waveform design, and deep learning for next-generation 6G wireless networks.
 
-Academic Pages is a Github Pages template for academic websites.
+## What's on the site
 
+- **[Publications](https://therealbazzi.github.io/publications/)** — 50+ peer-reviewed journal articles and conference papers, indexed by DOI and arXiv, each with structured Highwire Press, Dublin Core, schema.org `ScholarlyArticle` metadata, and copy-to-clipboard BibTeX.
+- **[Patents](https://therealbazzi.github.io/patents/)** — three U.S. patents from work at CEVA-DSP on Wi-Fi (802.11ax), Bluetooth, MU-MIMO precoding, OFDM digital pre-distortion, and CPM decoding.
+- **[Talks](https://therealbazzi.github.io/talks/)** — invited talks and conference presentations on ISAC and signal processing for 6G.
+- **[Teaching](https://therealbazzi.github.io/teaching/)** — free YouTube courses on convex optimization, signal processing, C++ and Python, and data structures (over 270 000 subscribers on the [YouTube channel](https://www.youtube.com/channel/UCgC1d4JZ1Fz4t8MWLJD464w)).
+- **[Honors](https://therealbazzi.github.io/honors/)** — IEEE Exemplary Reviewer awards, YouTube Silver Creator Award, ICASSP Best Student Paper nomination, ANRT CIFRE PhD scholarship.
+- **[Service](https://therealbazzi.github.io/service/)** — editorial roles at IEEE Communications Letters, IEEE Open Journal of the Communications Society, and IEEE Journal of Selected Topics in Signal Processing.
+- **[CV](https://therealbazzi.github.io/cv/)** and **[Blog](https://therealbazzi.github.io/year-archive/)**.
 
-# Getting Started
+## Identifiers
 
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Click the "Use this template" button in the top right.
-1. On the "New repository" page, enter your repository name as "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and add your content.
-1. Upload any files (like PDFs, .zip files, etc.) to the `files/` directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
-1. (Optional) Use the Jupyter notebooks or python scripts in the `markdown_generator` folder to generate markdown files for publications and talks from a TSV file.
+| Profile | URL |
+| --- | --- |
+| ORCID | [0000-0002-7645-352X](https://orcid.org/0000-0002-7645-352X) |
+| Google Scholar | [9HWunwcAAAAJ](https://scholar.google.com/citations?hl=en&user=9HWunwcAAAAJ) |
+| DBLP | [62/10116](https://dblp.org/pid/62/10116.html) |
+| Scopus | [57188864047](https://www.scopus.com/authid/detail.uri?authorId=57188864047) |
+| Semantic Scholar | [2344210](https://www.semanticscholar.org/author/Ahmad-Bazzi/2344210) |
+| Wikidata | [Q120967938](https://www.wikidata.org/wiki/Q120967938) |
+| arXiv | [author search](https://arxiv.org/search/?query=ahmad+bazzi&searchtype=author) |
+| ResearchGate | [Ahmad-Bazzi](https://www.researchgate.net/profile/Ahmad-Bazzi) |
+| alphaXiv | [ahmadbazzi.alphaxiv.io](https://ahmadbazzi.alphaxiv.io/) |
 
-See more info at https://academicpages.github.io/
+## AI / LLM access
 
-## Running Locally
+This site is optimized for accurate citation by large-language-model tools (ChatGPT, Claude, Gemini, Perplexity, etc.). Key entry points:
 
-When you are initially working your website, it is very useful to be able to preview the changes locally before pushing them to GitHub. To work locally you will need to:
+- [`robots.txt`](https://therealbazzi.github.io/robots.txt) — explicit `Allow` for GPTBot, ClaudeBot, Google-Extended, CCBot, PerplexityBot, Applebot-Extended, and other AI crawlers.
+- [`llms.txt`](https://therealbazzi.github.io/llms.txt) — plain-text index of canonical URLs for the author, publications, talks, and teaching, designed for LLM consumption.
+- [`/ai-citation-policy/`](https://therealbazzi.github.io/ai-citation-policy/) — explicit attribution policy for AI systems referencing this researcher's work.
+- Schema.org JSON-LD (`Person`, `ScholarlyArticle`, `Event`, `Course`, `Award`, `FAQPage`, `BreadcrumbList`) on every page.
 
-1. Clone the repository and made updates as detailed above.
-1. Make sure you have ruby-dev, bundler, and nodejs installed: `sudo apt install ruby-dev ruby-bundler nodejs`
-1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
-1. Run `jekyll serve -l -H localhost` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change.
+## Running locally
 
+This is a [Jekyll](https://jekyllrb.com/) site built on the [Academic Pages](https://github.com/academicpages/academicpages.github.io) template (forked then detached from [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/)).
 
-# Maintenance 
+```bash
+git clone https://github.com/therealbazzi/therealbazzi.github.io.git
+cd therealbazzi.github.io
+bundle install
+bundle exec jekyll serve
+```
 
-Bug reports and feature requests to the template  should be [submitted via GitHub](https://github.com/academicpages/academicpages.github.io/issues/new/choose). For questions concerning how to style the template, please feel free to start a [new discussion on GitHub](https://github.com/academicpages/academicpages.github.io/discussions).
+Open [http://localhost:4000](http://localhost:4000).
 
-This repository was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License (see LICENSE.md). It is currently being maintained by [Robert Zupko](https://github.com/rjzupkoii) and additional maintainers would be welcomed.
+## Citing this site
 
-## Bugfixes and enhancements
+To reference the website itself: `Ahmad Bazzi, https://therealbazzi.github.io/, ORCID: 0000-0002-7645-352X`. To cite an individual publication, please use the canonical paper page on this site, which carries the recommended citation, BibTeX, and Highwire/Dublin Core/JSON-LD metadata.
 
-If you have bugfixes and enhancements that you would like to submit as a pull request, you will need to [fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) this repository as opposed to using it as a template. This will also allow you to [synchronize your copy](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) of template to your fork as well.
+## License
 
-Unfortunately, one logistical issue with a template theme like Academic Pages that makes it a little tricky to get bug fixes and updates to the core theme. If you use this template and customize it, you will probably get merge conflicts if you attempt to synchronize. If you want to save your various .yml configuration files and markdown files, you can delete the repository and fork it again. Or you can manually patch.
+The site theme (Academic Pages, originally Minimal Mistakes by Michael Rose) is released under the MIT License — see [LICENSE](LICENSE). All publication, patent, teaching, and biographical content on the site is © Ahmad Bazzi.

@@ -3,7 +3,7 @@ layout: archive
 title: "Publications"
 permalink: /publications/
 author_profile: true
-description: "Peer-reviewed publications by Ahmad Bazzi: integrated sensing and communication (ISAC), MIMO, RIS, deep learning for wireless, AoA/JADE estimation, chirp spread spectrum. Indexed by IEEE Xplore, arXiv, Google Scholar, DBLP, Scopus."
+description: "Peer-reviewed publications by Ahmad Bazzi: integrated sensing and communications (ISAC), MIMO, RIS, deep learning for wireless, AoA/JADE estimation, chirp spread spectrum. Indexed by IEEE Xplore, arXiv, Google Scholar, DBLP, Scopus."
 ---
 
 {% if site.author.googlescholar %}

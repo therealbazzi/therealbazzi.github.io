@@ -70,6 +70,7 @@ description: "Peer-reviewed publications by Ahmad Bazzi: integrated sensing and 
 
 
 ## Conferences
+* S. Naoumi, <u>K. Mutuwira</u>, R. Bomfin, **A. Bazzi**, and M. Chafii, "Deep Learning for High-Resolution Sensing Parameter Estimation in Bistatic ISAC", accepted to *IEEE International Conference on Machine Learning for Communication and Networking (ICMLCN)*, 2026.
 * D. Wang, I. Jariwala, **A. Bazzi**, S. Rangan, T. S. Rappaport, and M. Chafii,“Compressed Multiband Sensing in FR3 Using Alternating Direction Method of Multipliers,” accepted by *IEEE Wireless Communications and Networking Conference (WCNC)*, Kuala Lumpur, Malaysia, Apr. 2026, pp. 1–6. [[arXiv]](https://arxiv.org/pdf/2510.03055)
 * A. W. Azim, T. Rahman, **A. Bazzi**, M. Uysal and M. Chafii, "Timing Synchronization and Channel Estimation for DCO-OFDM in VLC Systems," *2025 IEEE 36th International Symposium on Personal, Indoor and Mobile Radio Communications (PIMRC)*, Istanbul, Turkiye, 2025, pp. 1-6, doi: 10.1109/PIMRC62392.2025.11274571.[[paper]](https://ieeexplore.ieee.org/document/11274571)
 * **A. Bazzi** and M. Chafii, “Towards ISAC RIS-Enabled Passive Radar Target Localization””, *ICC 2025 - IEEE International Conference on Communications*, Montreal, QC, Canada, 2025, pp. 2290-2295, doi: 10.1109/ICC52391.2025.11162110.[[arXiv]](https://arxiv.org/pdf/2502.18787)[[paper]](https://ieeexplore.ieee.org/document/11162110)

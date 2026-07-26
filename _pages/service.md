@@ -56,9 +56,12 @@ description: "Editorial, reviewer, and TPC service by Ahmad Bazzi for IEEE journ
 </script>
 
 ## Editorial Roles
-* IEEE Communications Letters, 2025-2026
-* IEEE Open Journal of the Communications Society (OJ-COMS), 2025-2026
+* IEEE Journal of Selected T opics in Signal Processing , Special Issue on *"Signal Processing for Trustworthiness in 6G Wireless Ecosystems"*, 2026-2027
+* IEEE Communications Standards Magazine  (OJ-COMS), Special Issue on *"Semantic Communication, Near Field Communication, and Integrated Sensing and Communication: The Three Musketeers of Integrated Terrestrial and Non-Terrestrial Networks"*, 2026-2027
 * IEEE Open Journal of the Communications Society (OJ-COMS), Special Issue on *"Resilient and Trustworthy Communications for 6G Smart Wireless Environments: Integrating Sensing, AI, and Security in Smart Wireless Systems"*, 2025-2026
+* IEEE Open Journal of the Communications Society (OJ-COMS), 2025-2026
+* IEEE Communications Letters, 2025-2026
+
 
 
 ## Reviewer for Journals

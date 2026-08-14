@@ -45,7 +45,7 @@ description: "Peer-reviewed publications by Ahmad Bazzi: integrated sensing and 
 </script>
 
 ## Journals
-* A. Azim, **A. Bazzi**\*, R. Bomfin, N. Giakoumidis, T. S. Rappaport, M. Chafii. "Statistical and Deterministic RCS Characterization for ISAC Channel Modeling." in *IEEE Transactions on Wireless Communications*, 2026. [[arXiv]](https://arxiv.org/pdf/2502.11540)
+A. W. Azim, **A. Bazzi**\*, R. Bomfin, N. Giakoumidis, T. S. Rappaport and M. Chafii, "Indoor Statistical and Deterministic RCS Characterization for ISAC Channel Modeling," in *IEEE Transactions on Wireless Communications*, vol. 25, pp. 21337-21354, 2026, doi: 10.1109/TWC.2026.3718356. [[arXiv]](https://arxiv.org/pdf/2502.11540) [[paper]](https://ieeexplore.ieee.org/document/11643488)
 * A. Azim, **A. Bazzi**\*,  T. S. Rappaport, M. Chafii. "A Framework for Geometric-based Statistical Channel Modeling in ISAC Systems." in *IEEE Transactions on Wireless Communications*, 2026. [[arXiv]](https://arxiv.org/pdf/2511.23201) [[paper]](https://ieeexplore.ieee.org/document/11574587/)
 * D. Wang, **A. Bazzi**\*, M. Chafii. "DRIP: A Versatile Family of Space-Time ISAC Discrete-time Sequences." in *IEEE Journal on Selected Areas in Information Theory*, 2026, doi: 10.1109/JSAIT.2026.3694721. [[arXiv]](https://arxiv.org/pdf/2410.12746) [[paper]](https://ieeexplore.ieee.org/document/11526788)
 * **A. Bazzi**\*, F. Gast, F. Liu, S. Jin, G. Fettweis, M. Chafii "From Coverage to Sensing: ISAC meets FR3", in *IEEE Communications Magazine*, doi: 10.1109/MCOM.001.2500787. [[arXiv]](https://arxiv.org/pdf/2605.18120) [[paper]](https://ieeexplore.ieee.org/document/11573792)

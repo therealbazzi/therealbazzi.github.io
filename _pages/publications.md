@@ -44,8 +44,6 @@ description: "Peer-reviewed publications by Ahmad Bazzi: integrated sensing and 
 }
 </script>
 
-A. W. Azim, A. Bazzi, T. S. Rappaport and M. Chafii, "A Framework for Geometry-Based Statistical Channel Modeling in ISAC Systems," in IEEE Transactions on Wireless Communications, vol. 25, pp. 19773-19790, 2026, doi: 10.1109/TWC.2026.3703753.
-
 
 
 

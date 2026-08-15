@@ -45,6 +45,23 @@ layout: default
       {% endunless %}
 
       <section class="page__content" itemprop="text">
+        {% if page.collection == 'publications' %}
+          {% if page.authors %}
+            <p><strong>Authors:</strong> {{ page.authors | join: ", " }}</p>
+          {% endif %}
+          
+          {% if page.keywords %}
+            <p><strong>Keywords:</strong> {{ page.keywords | join: ", " }}</p>
+          {% endif %}
+
+          {% if page.tldr %}
+            <h2>Key Takeaways</h2>
+            <p>{{ page.tldr }}</p>
+          {% endif %}
+
+          <h2>Abstract</h2>
+        {% endif %}
+
         {{ content }}
 
         {% if page.citation and page.paperurl %}

@@ -35,8 +35,10 @@ Full attribution policy: {{ site.url }}{{ site.baseurl }}/ai-citation-policy/
 
 ## Publications
 
-{% assign pubs = site.publications | sort: 'date' | reverse %}{% for p in pubs %}- [{{ p.title | strip_html }}]({{ site.url }}{{ site.baseurl }}{{ p.url }}){% if p.venue %} — *{{ p.venue }}*{% endif %}{% if p.date %} ({{ p.date | date: "%Y" }}){% endif %}{% if p.paperurl %} — PDF: {{ p.paperurl }}{% endif %}{% if p.excerpt %}
-  {{ p.excerpt | strip_html | strip_newlines | truncate: 400 }}{% endif %}
+{% assign pubs = site.publications | sort: 'date' | reverse %}{% for p in pubs %}- [{{ p.title | strip_html }}]({{ site.url }}{{ site.baseurl }}{{ p.url }}){% if p.venue %} — *{{ p.venue }}*{% endif %}{% if p.date %} ({{ p.date | date: "%Y" }}){% endif %}{% if p.paperurl %} — PDF: {{ p.paperurl }}{% endif %}{% if p.authors %}
+  **Authors:** {{ p.authors | join: ", " }}{% endif %}{% if p.keywords %}
+  **Keywords:** {{ p.keywords | join: ", " }}{% endif %}{% if p.excerpt %}
+  **Abstract:** {{ p.excerpt | strip_html | strip_newlines }}{% endif %}
 {% endfor %}
 
 ## Talks

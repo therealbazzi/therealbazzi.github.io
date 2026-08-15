@@ -36,7 +36,22 @@ description: "Peer-reviewed publications by Ahmad Bazzi: integrated sensing and 
         "url": "{{ site.url }}{{ site.baseurl }}{{ p.url }}",
         "datePublished": "{{ p.date | date_to_xmlschema }}"{% if p.venue %},
         "isPartOf": { "@type": "Periodical", "name": {{ p.venue | jsonify }} }{% endif %}{% if p.doi %},
-        "sameAs": "https://doi.org/{{ p.doi }}"{% endif %}
+        "sameAs": "https://doi.org/{{ p.doi }}"{% endif %}{% if p.excerpt %},
+        "abstract": {{ p.excerpt | strip_html | jsonify }},
+        "description": {{ p.excerpt | strip_html | jsonify }}{% endif %}{% if p.keywords %},
+        "keywords": {{ p.keywords | join: ", " | jsonify }}{% endif %}{% if p.authors %},
+        "author": [
+          {% for a in p.authors %}{
+            "@type": "Person",
+            "name": {{ a | jsonify }}
+          }{% unless forloop.last %},{% endunless %}{% endfor %}
+        ]{% else %},
+        "author": [
+          {
+            "@type": "Person",
+            "name": "{{ site.author.name }}"
+          }
+        ]{% endif %}
       }{% endif %}
     }{% unless forloop.last %},{% endunless %}
     {%- endfor %}

@@ -26,7 +26,8 @@ Work experience
   *New York University (NYU) Abu Dhabi*
 * **Research Associate** (2022-2024)
   *New York University (NYU) Abu Dhabi*
-* **Algorithm and Signal Processing Team Leader** | CEVA-DSP | 2021–2022
+* **Algorithm and Signal Processing Team Leader** (2021-2022)
+  *CEVA-DSP*
   - Led an algorithm and signal-processing team developing advanced DSP and wireless/PHY algorithms from concept through implementation handoff.
   - System-level algorithm architecture, requirements definition, performance analysis, and end-to-end signal-processing chain design.
   - Floating-point reference-model development and algorithm prototyping in MATLAB.

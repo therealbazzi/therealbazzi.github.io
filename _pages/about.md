@@ -44,8 +44,17 @@ His research interests include signal processing, wireless communications, artif
   *New York University (NYU) Abu Dhabi*
 * **Research Associate** (2022-2024)
   *New York University (NYU) Abu Dhabi*
-* **Algorithm and Signal Processing Team Leader** (2021-2022)
-  *CEVA-DSP*
+* **Algorithm and Signal Processing Team Leader** | CEVA-DSP | 2021–2022
+  - Led an algorithm and signal-processing team developing advanced DSP and wireless/PHY algorithms from concept through implementation handoff.
+  - System-level algorithm architecture, requirements definition, performance analysis, and end-to-end signal-processing chain design.
+  - Floating-point reference-model development and algorithm prototyping in MATLAB.
+  - Fixed-point modelling, word-length optimization, quantization analysis, scaling, saturation, and bit-accurate validation.
+  - OFDM/MIMO physical-layer signal processing, including synchronization, channel estimation, equalization, detection, and related receiver algorithms.
+  - Algorithm development and performance optimization for complex communications and signal-processing systems.
+  - Link-level/system-level simulation, Monte Carlo analysis, BER/PER/EVM evaluation, and performance benchmarking.
+  - Hardware/software partitioning and architecture definition for efficient DSP, CPU, and FPGA/ASIC implementation.
+  - Definition of implementation requirements, interfaces, test vectors, corner cases, and golden-reference models for downstream C++/RTL teams.
+  - Technical leadership across algorithm, architecture, implementation, and verification teams, including design reviews, mentoring, prioritization, and delivery ownership.
 * **Signal Processing Engineer** (2017-2021)
   *CEVA-DSP*
 * **Signal Processing Engineer intern** (Summer 2014)

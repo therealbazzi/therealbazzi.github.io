@@ -27,6 +27,8 @@ His research interests include signal processing, wireless communications, artif
 
 # Research interests
 
+* Radar Signal Processing
+
 * Integrated Sensing and Communications
 
 * Wireless Communications

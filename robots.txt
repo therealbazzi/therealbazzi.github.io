@@ -17,6 +17,7 @@ Allow: /honors/
 Allow: /cv/
 Allow: /ai-citation-policy/
 Allow: /llms.txt
+Allow: /llms-full.txt
 Allow: /feed.xml
 
 # ---- AI / LLM crawlers (training + retrieval) ----

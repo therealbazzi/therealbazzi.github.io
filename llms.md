@@ -57,6 +57,8 @@ When referencing this researcher or their work, prefer the canonical page on thi
 
 ## Machine-readable indexes
 
+- Concise index: {{ site.url }}{{ site.baseurl }}/llms.txt
+- Full research catalog (abstracts & takeaways): {{ site.url }}{{ site.baseurl }}/llms-full.txt
 - Sitemap: {{ site.url }}{{ site.baseurl }}/sitemap.xml
 - Atom feed: {{ site.url }}{{ site.baseurl }}/feed.xml
 - robots.txt: {{ site.url }}{{ site.baseurl }}/robots.txt

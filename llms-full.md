@@ -94,3 +94,4 @@ Refer to the complete patents registry: {{ site.url }}{{ site.baseurl }}/patents
 ## Honors & Awards
 
 Refer to the honors and distinctions: {{ site.url }}{{ site.baseurl }}/honors/
+

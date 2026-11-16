@@ -63,8 +63,11 @@ description: "Peer-reviewed publications by Ahmad Bazzi: integrated sensing and 
 
 
 ## Journals
+
+* D. Wang, R. Bomfin, **A. Bazzi**\* and M. Chafii, "Multi-Band Sensing in FR3 with Background Dense Multipath Components," in *IEEE Transactions on Wireless Communications*, 2026. [[arXiv]](https://arxiv.org/pdf/2602.23539)
+* Y. Chen, N. Wei, **A. Bazzi**, X. Dong, R. Yang, Y. Li and Y. Xiu, "Robust Secure Beamforming for Movable Antenna Enhanced Integrated Sensing and Communications," in *IEEE Communications Letters*, 2026, doi: 10.1109/LCOMM.2026.3752986. [[arXiv]](https://arxiv.org/pdf/2606.07104) [[paper]](https://ieeexplore.ieee.org/document/11793620)
 * A. W. Azim, **A. Bazzi**\*, R. Bomfin, N. Giakoumidis, T. S. Rappaport and M. Chafii, "Indoor Statistical and Deterministic RCS Characterization for ISAC Channel Modeling," in *IEEE Transactions on Wireless Communications*, vol. 25, pp. 21337-21354, 2026, doi: 10.1109/TWC.2026.3718356. [[arXiv]](https://arxiv.org/pdf/2502.11540) [[paper]](https://ieeexplore.ieee.org/document/11643488)
-* A. Azim, **A. Bazzi**\*,  T. S. Rappaport, M. Chafii. "A Framework for Geometric-based Statistical Channel Modeling in ISAC Systems." in *IEEE Transactions on Wireless Communications*, vol. 25, pp. 19773-19790, 2026, doi: 10.1109/TWC.2026.3703753., 2026. [[arXiv]](https://arxiv.org/pdf/2511.23201) [[paper]](https://ieeexplore.ieee.org/document/11574587/)
+* A. Azim, **A. Bazzi**\*,  T. S. Rappaport, M. Chafii. "A Framework for Geometry-based Statistical Channel Modeling in ISAC Systems." in *IEEE Transactions on Wireless Communications*, vol. 25, pp. 19773-19790, 2026, doi: 10.1109/TWC.2026.3703753., 2026. [[arXiv]](https://arxiv.org/pdf/2511.23201) [[paper]](https://ieeexplore.ieee.org/document/11574587/)
 * D. Wang, **A. Bazzi**\*, M. Chafii. "DRIP: A Versatile Family of Space-Time ISAC Discrete-time Sequences." in *IEEE Journal on Selected Areas in Information Theory*, 2026, doi: 10.1109/JSAIT.2026.3694721. [[arXiv]](https://arxiv.org/pdf/2410.12746) [[paper]](https://ieeexplore.ieee.org/document/11526788)
 * **A. Bazzi**\*, F. Gast, F. Liu, S. Jin, G. Fettweis, M. Chafii "From Coverage to Sensing: ISAC meets FR3", in *IEEE Communications Magazine*, doi: 10.1109/MCOM.001.2500787. [[arXiv]](https://arxiv.org/pdf/2605.18120) [[paper]](https://ieeexplore.ieee.org/document/11573792)
 * E. Illi, **A. Bazzi**, M. Qaraqe, and A. Ghrayeb. "On the Secrecy-Sensing Optimization of RIS-assisted Full-Duplex Integrated Sensing and Communication Network." in *IEEE Transactions on Wireless Communications*, vol. 25, pp. 9530-9547, 2026, doi: 10.1109/TWC.2025.3645048. [[arXiv]](https://arxiv.org/pdf/2504.20912) [[paper]](https://ieeexplore.ieee.org/document/11313766)
@@ -90,6 +93,8 @@ description: "Peer-reviewed publications by Ahmad Bazzi: integrated sensing and 
 
 
 ## Conferences
+
+* R. Yang, Z. Dong, L. Zhang, W. Lyu, Y. Xiu, N. Wei, **A. Bazzi** and C. Assi, "Movable Antenna Enhanced Covert Dual-Functional Radar-Communication: Joint Beamforming and Antenna Position Optimization," *2026 IEEE 104th Vehicular Technology Conference (VTC2026-Fall)*, Boston, MA, USA, 2026, pp. 1-7, doi: 10.1109/VTC2026-Fall68024.2026.11758262. [[arXiv]](https://arxiv.org/pdf/2510.09949) [[paper]](https://ieeexplore.ieee.org/document/11758262)
 * S. Naoumi, K. Mutuwira, R. Bomfin, **A. Bazzi**, and M. Chafii, "Deep Learning for High-Resolution Sensing Parameter Estimation in Bistatic ISAC", accepted to *IEEE International Conference on Machine Learning for Communication and Networking (ICMLCN)*, 2026.
 * D. Wang, I. Jariwala, **A. Bazzi**, S. Rangan, T. S. Rappaport, and M. Chafii,“Compressed Multiband Sensing in FR3 Using Alternating Direction Method of Multipliers,” accepted by *IEEE Wireless Communications and Networking Conference (WCNC)*, Kuala Lumpur, Malaysia, Apr. 2026, pp. 1–6. [[arXiv]](https://arxiv.org/pdf/2510.03055)
 * A. W. Azim, T. Rahman, **A. Bazzi**, M. Uysal and M. Chafii, "Timing Synchronization and Channel Estimation for DCO-OFDM in VLC Systems," *2025 IEEE 36th International Symposium on Personal, Indoor and Mobile Radio Communications (PIMRC)*, Istanbul, Turkiye, 2025, pp. 1-6, doi: 10.1109/PIMRC62392.2025.11274571.[[paper]](https://ieeexplore.ieee.org/document/11274571)

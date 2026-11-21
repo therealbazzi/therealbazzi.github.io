@@ -44,6 +44,7 @@ description: "Editorial, reviewer, and TPC service by Ahmad Bazzi for IEEE journ
     "knowsAbout": [
       "IEEE Transactions on Wireless Communications",
       "IEEE Transactions on Communications",
+      "IEEE Transactions on Green Communications and Networking",
       "IEEE Transactions on Signal Processing",
       "IEEE Transactions on Vehicular Technology",
       "IEEE Transactions on Aerospace and Electronic Systems",
@@ -65,6 +66,7 @@ description: "Editorial, reviewer, and TPC service by Ahmad Bazzi for IEEE journ
 
 
 ## Reviewer for Journals
+* IEEE Transactions on Green Communications and Networking (TGCN)
 * IEEE Transactions on Wireless Communications
 * IEEE Transactions on Communications
 * IEEE Transactions on Signal Processing

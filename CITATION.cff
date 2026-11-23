@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you reference Ahmad Bazzi's publications, algorithmic implementations, or research data, please cite this profile."
+authors:
+  - family-names: "Bazzi"
+    given-names: "Ahmad"
+    orcid: "https://orcid.org/0000-0002-7645-352X"
+    affiliation: "New York University (NYU) Abu Dhabi & NYU WIRELESS"
+title: "Ahmad Bazzi — Scholarly Research Profile and Publication Index"
+abstract: "Curated research publications, algorithmic formulations, and scientific contributions by Dr. Ahmad Bazzi in integrated sensing and communications (ISAC), movable antenna beamforming, 6G FR3 multi-band sensing, MIMO signal processing, and optimization."
+url: "https://therealbazzi.github.io/"
+repository-code: "https://github.com/therealbazzi/therealbazzi.github.io"
+license: "MIT"
+keywords:
+  - "integrated sensing and communication"
+  - "ISAC"
+  - "signal processing"
+  - "wireless communications"
+  - "6G"
+  - "movable antennas"
+  - "fluid antennas"
+  - "FR3 multi-band sensing"
+  - "dense multipath components"
+  - "physical layer security"
+  - "MIMO"
+  - "optimization"
+

@@ -18,6 +18,10 @@ Allow: /cv/
 Allow: /ai-citation-policy/
 Allow: /llms.txt
 Allow: /llms-full.txt
+Allow: /.well-known/
+Allow: /.well-known/llms.txt
+Allow: /publications.json
+Allow: /publications.bib
 Allow: /feed.xml
 
 # ---- AI / LLM crawlers (training + retrieval) ----

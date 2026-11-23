@@ -1,0 +1,71 @@
+---
+layout: null
+permalink: /publications.bib
+sitemap: false
+---
+{%- assign pubs = site.publications | sort: 'date' | reverse -%}
+{%- for p in pubs -%}
+{%- assign year = p.date | date: '%Y' -%}
+{%- assign month_lc = p.date | date: '%b' | downcase -%}
+{%- if p.authors and p.authors[0] -%}
+  {%- assign first_author = p.authors[0] -%}
+  {%- assign name_parts = first_author | split: ' ' -%}
+  {%- assign last_name = name_parts | last | downcase | replace: ',', '' -%}
+{%- else -%}
+  {%- assign last_name = 'bazzi' -%}
+{%- endif -%}
+{%- assign title_words = p.title | strip_html | downcase | split: ' ' -%}
+{%- assign first_word = '' -%}
+{%- for w in title_words -%}
+  {%- assign clean = w | replace: ',', '' | replace: '.', '' | replace: ':', '' -%}
+  {%- if clean.size > 3 and first_word == '' -%}
+    {%- assign first_word = clean -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- assign bibkey = last_name | append: year | append: first_word -%}
+{%- capture authors_bib -%}
+{%- if p.authors -%}
+  {%- for a in p.authors -%}{{ a }}{% unless forloop.last %} and {% endunless %}{%- endfor -%}
+{%- else -%}
+  {{ site.author.name }}
+{%- endif -%}
+{%- endcapture -%}
+@article{ {{- bibkey -}},
+  title   = { {{- p.title | strip_html -}} },
+  author  = { {{- authors_bib -}} },
+{%- if p.venue %}
+  journal = { {{- p.venue -}} },
+{%- endif %}
+{%- if p.volume %}
+  volume  = { {{- p.volume -}} },
+{%- endif %}
+{%- if p.issue %}
+  number  = { {{- p.issue -}} },
+{%- endif %}
+{%- if p.firstpage and p.lastpage %}
+  pages   = { {{- p.firstpage -}}--{{- p.lastpage -}} },
+{%- elsif p.firstpage %}
+  pages   = { {{- p.firstpage -}} },
+{%- endif %}
+  year    = { {{- year -}} },
+  month   = { {{- month_lc -}} },
+{%- if p.publisher %}
+  publisher = { {{- p.publisher -}} },
+{%- endif %}
+{%- if p.doi %}
+  doi     = { {{- p.doi -}} },
+  url     = {https://doi.org/{{ p.doi }}},
+{%- elsif p.arxiv_id %}
+  eprint  = { {{- p.arxiv_id -}} },
+  archivePrefix = {arXiv},
+  url     = {https://arxiv.org/abs/{{ p.arxiv_id }}},
+{%- else %}
+  url     = { {{- p.url | prepend: site.baseurl | prepend: site.url -}} },
+{%- endif %}
+{%- if p.arxiv_id and p.doi %}
+  eprint  = { {{- p.arxiv_id -}} },
+  archivePrefix = {arXiv},
+{%- endif %}
+}
+
+{% endfor %}

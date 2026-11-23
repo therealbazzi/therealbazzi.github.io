@@ -118,7 +118,7 @@ google_site_verification : "Apib7-x98H0j5cPqHWwSMm6dNU4GmODRoqxLiDzdx9I"
 bing_site_verification   :
 alexa_site_verification  :
 yandex_site_verification :
-keywords                 : "Ahmad Bazzi, ISAC, Integrated Sensing and Communication, signal processing, wireless communications, 6G, MIMO, RIS, reconfigurable intelligent surface, deep learning, AoA estimation, JADE, chirp spread spectrum, NYU Abu Dhabi, NYU WIRELESS, EURECOM, CEVA-DSP, ORCID 0000-0002-7645-352X"
+keywords                 : "Ahmad Bazzi, ISAC, Integrated Sensing and Communication, signal processing, wireless communications, 6G, MIMO, movable antennas, fluid antennas, FR3 multi-band sensing, physical layer security, covert communications, dense multipath components, RIS, reconfigurable intelligent surface, deep learning, AoA estimation, JADE, chirp spread spectrum, NYU Abu Dhabi, NYU WIRELESS, EURECOM, CEVA-DSP, ORCID 0000-0002-7645-352X"
 
 
 # Social Sharing
@@ -162,6 +162,7 @@ include:
   - .htaccess
   - _pages
   - files
+  - .well-known
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"

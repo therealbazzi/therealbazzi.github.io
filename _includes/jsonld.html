@@ -198,6 +198,19 @@ JSON-LD structured data.
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "@id": "{{ site.url }}{{ site.baseurl }}/#profilepage",
+  "url": "{{ site.url }}{{ site.baseurl }}/",
+  "name": "{{ site.author.name }} — Research Scientist Profile",
+  "dateModified": "{{ site.time | date_to_xmlschema }}",
+  "mainEntity": {
+    "@id": "{{ site.url }}{{ site.baseurl }}/#person"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
   "@type": "FAQPage",
   "@id": "{{ site.url }}{{ site.baseurl }}/#faq",
   "mainEntity": [

@@ -9,6 +9,12 @@ description: "Peer-reviewed publications by Ahmad Bazzi: integrated sensing and 
 {% if site.author.googlescholar %}
   <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a> and <a href="https://www.scopus.com/authid/detail.uri?authorId=57188864047">Scopus</a>.</div>
 {% endif %}
+
+<p style="margin: 1em 0; display: flex; flex-wrap: wrap; gap: 8px;">
+  <a href="{{ site.url }}{{ site.baseurl }}/publications.bib" class="btn btn--primary btn--small" download><i class="fa fa-download" aria-hidden="true"></i> Download BibTeX (.bib)</a>
+  <a href="{{ site.url }}{{ site.baseurl }}/publications.json" class="btn btn--info btn--small"><i class="fa fa-code" aria-hidden="true"></i> JSON Endpoint</a>
+  <a href="{{ site.url }}{{ site.baseurl }}/llms-full.txt" class="btn btn--success btn--small"><i class="fa fa-robot" aria-hidden="true"></i> LLM Full Corpus (/llms-full.txt)</a>
+</p>
 {% include base_path %}
 
 <script type="application/ld+json">

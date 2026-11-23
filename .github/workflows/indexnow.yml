@@ -1,0 +1,70 @@
+name: IndexNow Real-Time AI Search Ping
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  indexnow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Submit all URLs to IndexNow
+        run: |
+          python3 -c "
+          import glob, re, urllib.request, json
+
+          urls = [
+            'https://therealbazzi.github.io/',
+            'https://therealbazzi.github.io/publications/',
+            'https://therealbazzi.github.io/publications.json',
+            'https://therealbazzi.github.io/publications.bib',
+            'https://therealbazzi.github.io/patents/',
+            'https://therealbazzi.github.io/talks/',
+            'https://therealbazzi.github.io/teaching/',
+            'https://therealbazzi.github.io/honors/',
+            'https://therealbazzi.github.io/service/',
+            'https://therealbazzi.github.io/cv/',
+            'https://therealbazzi.github.io/ai-citation-policy/',
+            'https://therealbazzi.github.io/llms.txt',
+            'https://therealbazzi.github.io/llms-full.txt',
+            'https://therealbazzi.github.io/.well-known/llms.txt'
+          ]
+
+          for f in sorted(glob.glob('_publications/*.md')):
+              with open(f, 'r') as fp:
+                  content = fp.read()
+              m = re.search(r'permalink:\s*([^\s]+)', content)
+              if m:
+                  urls.append('https://therealbazzi.github.io' + m.group(1).strip())
+
+          for f in sorted(glob.glob('_posts/*.md')):
+              with open(f, 'r') as fp:
+                  content = fp.read()
+              m = re.search(r'permalink:\s*([^\s]+)', content)
+              if m:
+                  urls.append('https://therealbazzi.github.io' + m.group(1).strip())
+
+          payload = {
+            'host': 'therealbazzi.github.io',
+            'key': 'be6678206e09f3f26823fbf8ec499409',
+            'keyLocation': 'https://therealbazzi.github.io/be6678206e09f3f26823fbf8ec499409.txt',
+            'urlList': urls
+          }
+
+          req = urllib.request.Request(
+            'https://api.indexnow.org/indexnow',
+            data=json.dumps(payload).encode('utf-8'),
+            headers={'Content-Type': 'application/json; charset=utf-8'}
+          )
+
+          try:
+            with urllib.request.urlopen(req) as resp:
+              print(f'IndexNow ping succeeded with status {resp.status} for {len(urls)} URLs')
+          except Exception as e:
+            print('IndexNow submission note:', e)
+          "
+

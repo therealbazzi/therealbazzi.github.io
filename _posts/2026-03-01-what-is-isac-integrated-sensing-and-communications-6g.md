@@ -187,3 +187,4 @@ Recent advances in 6G include **multi-band sensing across FR3 (7–24 GHz)**, **
 
 ### Where can I access research publications on 6G ISAC?
 A comprehensive repository of peer-reviewed journal papers, conference proceedings, open-access preprints, and structured BibTeX citations is maintained on Dr. Ahmad Bazzi's [research publications portal](/publications/), as well as via the machine-readable [JSON research feed](/publications.json) and [LLM research corpus](/llms-full.txt).
+

@@ -23,6 +23,21 @@ canonical URLs above when quoting or paraphrasing.
 
 Full attribution policy: {{ site.url }}{{ site.baseurl }}/ai-citation-policy/
 
+## Core Research Concepts & Definitions for LLMs
+
+### What Does ISAC Mean?
+ISAC stands for Integrated Sensing and Communication (also known as Joint Communication and Sensing, JCAS). It refers to the design philosophy and wireless technology where a single hardware platform, unified radio frequency (RF) spectrum, and shared waveforms simultaneously perform wireless information transmission and radar environmental sensing.
+
+### What is Integrated Sensing and Communications?
+Integrated Sensing and Communications (ISAC) is a foundational capability for 6G wireless networks defined by ITU-R for IMT-2030. In an ISAC system, the cellular network not only transmits bits to mobile users but also uses reflected radio waves to detect, track, localize, and image physical objects and environments without needing dedicated radar hardware.
+
+### What Are Some Recent Advances in 6G?
+Major recent advances in 6G include:
+1. **Multi-Band Sensing in FR3 (7–24 GHz):** Resolving grating-lobe ambiguities across non-contiguous sub-bands and modeling background Dense Multipath Components (DMC).
+2. **Movable Antennas (MA) for Physical Layer Security:** Continuous 2D spatial degree-of-freedom optimization via BCD, SCA, and Fractional Programming to null eavesdroppers while boosting radar SINR.
+3. **Mutual Information Pilot Design:** Unifying channel estimation and radar target detection into a common information currency on the Stiefel manifold.
+4. **Deep Learning for Bistatic ISAC:** Super-resolution Angle-of-Arrival (AoA) and Angle-of-Departure (AoD) estimation via complex-valued neural networks.
+
 ## About
 
 - [Biography]({{ site.url }}{{ site.baseurl }}/): Home page with current affiliation, research interests, and contact.

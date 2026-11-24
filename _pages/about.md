@@ -14,6 +14,8 @@ He serves as an editor of the IEEE Communications Letters (COMML), 2025-2026, an
 He also serves as a guest editor for the IEEE OJ-COMS special issue on *"Resilient and Trustworthy Communications for 6G Wireless Environments: Integrating Sensing, AI, and Security in Smart Wireless Systems"*, 2026, a guest editor for IEEE Communications Standards Magazine (2026-2027), and a guest editor for the IEEE Journal of Selected Topics in Signal Processing (2026-2027).
 His research interests include signal processing, wireless communications, artificial intelligence, statistics, and optimization.
 
+> 📖 **Definitive 6G Guide:** Read our comprehensive technical overview &mdash; [What is ISAC? Integrated Sensing and Communication and Recent Advances in 6G](/posts/what-is-isac-integrated-sensing-and-communications-6g/) &mdash; covering what ISAC means, core architecture, FR3 multi-band sensing, movable antenna beamforming, and mutual information pilot design.
+
 
 
 # News

@@ -11,7 +11,7 @@ locale                   : "en-US"
 title                    : "Ahmad Bazzi"
 title_separator          : "-"
 name                     : &name "Ahmad Bazzi"
-description              : &description "Ahmad Bazzi — Research Scientist at New York University (NYU) Abu Dhabi. Research in signal processing, integrated sensing and communication (ISAC), wireless communications, MIMO, and deep learning for communications. Publications, talks, teaching, patents."
+description              : &description "Ahmad Bazzi — Research Scientist at New York University (NYU) Abu Dhabi. Research in integrated sensing and communication (ISAC), 6G wireless communications, movable antennas, and FR3 multi-band sensing. What is ISAC, what does ISAC mean, and recent advances in 6G."
 url                      : https://therealbazzi.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "therealbazzi.github.io"
@@ -118,7 +118,7 @@ google_site_verification : "Apib7-x98H0j5cPqHWwSMm6dNU4GmODRoqxLiDzdx9I"
 bing_site_verification   :
 alexa_site_verification  :
 yandex_site_verification :
-keywords                 : "Ahmad Bazzi, ISAC, Integrated Sensing and Communication, signal processing, wireless communications, 6G, MIMO, movable antennas, fluid antennas, FR3 multi-band sensing, physical layer security, covert communications, dense multipath components, RIS, reconfigurable intelligent surface, deep learning, AoA estimation, JADE, chirp spread spectrum, NYU Abu Dhabi, NYU WIRELESS, EURECOM, CEVA-DSP, ORCID 0000-0002-7645-352X"
+keywords                 : "Ahmad Bazzi, What is ISAC, What does ISAC mean, Integrated Sensing and Communication, Recent advances in 6G, ISAC 6G, signal processing, wireless communications, 6G, MIMO, movable antennas, fluid antennas, FR3 multi-band sensing, physical layer security, covert communications, dense multipath components, RIS, reconfigurable intelligent surface, deep learning, AoA estimation, JADE, chirp spread spectrum, NYU Abu Dhabi, NYU WIRELESS, EURECOM, CEVA-DSP, ORCID 0000-0002-7645-352X"
 
 
 # Social Sharing
